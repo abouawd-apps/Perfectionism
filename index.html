@@ -1,0 +1,1805 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الجلاد تحت جلدي | كيف تتخلص من سجن المثالية؟</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Cairo for Arabic, Plus Jakarta Sans for English -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            200: '#fde68a',
+                            300: '#fcd34d',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                            800: '#92400e',
+                            900: '#78350f',
+                        },
+                        heal: {
+                            400: '#34d399',
+                            500: '#10b981',
+                            600: '#059669',
+                        },
+                        critic: {
+                            400: '#fb7185',
+                            500: '#f43f5e',
+                            600: '#e11d48',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        :root {
+            --font-ar: 'Cairo', sans-serif;
+            --font-en: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        html[lang="ar"] body {
+            font-family: var(--font-ar);
+        }
+
+        html[lang="en"] body {
+            font-family: var(--font-en);
+        }
+
+        /* Smooth theme transitions */
+        body, nav, section, div, button, input, textarea, span, p, h1, h2, h3, h4 {
+            transition: background-color 0.25s ease, border-color 0.25s ease, color 0.2s ease;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(15, 23, 42, 0.1);
+        }
+        .dark ::-webkit-scrollbar-track {
+            background: rgba(15, 23, 42, 0.8);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #f59e0b;
+            border-radius: 9999px;
+        }
+
+        /* Subtle glowing background orbs */
+        .glow-orb {
+            filter: blur(90px);
+            pointer-events: none;
+        }
+
+        /* Animated pulse ring */
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-6px); }
+        }
+        .animate-float {
+            animation: floatSlow 4s ease-in-out infinite;
+        }
+
+        /* Gauge transition */
+        .gauge-circle {
+            transition: stroke-dashoffset 1s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 min-h-screen flex flex-col selection:bg-amber-500 selection:text-slate-950 overflow-x-hidden">
+
+    <!-- Decorative Ambient Orbs -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-amber-500/10 dark:bg-amber-500/10 rounded-full glow-orb z-0"></div>
+    <div class="fixed bottom-10 right-1/4 w-96 h-96 bg-emerald-500/10 dark:bg-emerald-500/10 rounded-full glow-orb z-0"></div>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="sticky top-0 z-50 backdrop-blur-xl bg-white/85 dark:bg-slate-900/85 border-b border-slate-200/80 dark:border-slate-800/80 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-3">
+            <!-- Brand / Logo -->
+            <a href="#hero" class="flex items-center gap-3 group focus:outline-none">
+                <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-amber-500 to-rose-600 flex items-center justify-center text-white shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-unlock-keyhole text-lg"></i>
+                </div>
+                <div>
+                    <span id="navBrandTitle" class="block font-extrabold text-base sm:text-lg tracking-tight text-slate-900 dark:text-white">
+                        الجلاد تحت جلدي
+                    </span>
+                    <span id="navBrandSub" class="block text-xs text-amber-600 dark:text-amber-400 font-semibold">
+                        التحرر من سجن المثالية • د. عماد رشاد عثمان
+                    </span>
+                </div>
+            </a>
+
+            <!-- Desktop Quick Navigation Links -->
+            <nav class="hidden lg:flex items-center gap-1 bg-slate-100 dark:bg-slate-800/70 p-1.5 rounded-2xl border border-slate-200/60 dark:border-slate-700/60">
+                <a href="#journey" data-i18n="navJourney" class="px-3.5 py-2 rounded-xl text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-slate-700 hover:text-amber-600 dark:hover:text-amber-400 transition">
+                    خريطة الحلقة والكتاب
+                </a>
+                <a href="#quiz" data-i18n="navQuiz" class="px-3.5 py-2 rounded-xl text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-slate-700 hover:text-amber-600 dark:hover:text-amber-400 transition">
+                    مقياس الجلاد الداخلي
+                </a>
+                <a href="#reframer" data-i18n="navReframer" class="px-3.5 py-2 rounded-xl text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-slate-700 hover:text-amber-600 dark:hover:text-amber-400 transition">
+                    محول الصوت الداخلي
+                </a>
+                <a href="#breaker" data-i18n="navBreaker" class="px-3.5 py-2 rounded-xl text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-slate-700 hover:text-amber-600 dark:hover:text-amber-400 transition">
+                    محطم الشلل والتسويف
+                </a>
+            </nav>
+
+            <!-- Action Controls: Language Toggle & Dark/Light Mode Toggle -->
+            <div class="flex items-center gap-2.5">
+                <!-- Language Switch Button -->
+                <button id="langToggleBtn" onclick="toggleLanguage()" class="flex items-center gap-2 px-3.5 py-2.5 rounded-xl font-bold text-xs sm:text-sm bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-100 border border-slate-200 dark:border-slate-700 shadow-sm active:scale-95 transition" title="Change Language / تغيير اللغة">
+                    <i class="fa-solid fa-earth-americas text-amber-500"></i>
+                    <span id="langToggleLabel">English</span>
+                </button>
+
+                <!-- Theme Switch Button -->
+                <button id="themeToggleBtn" onclick="toggleTheme()" class="flex items-center gap-2 px-3.5 py-2.5 rounded-xl font-bold text-xs sm:text-sm bg-amber-500/10 hover:bg-amber-500/20 dark:bg-slate-800 dark:hover:bg-slate-700 text-amber-700 dark:text-amber-400 border border-amber-500/30 dark:border-slate-700 shadow-sm active:scale-95 transition" aria-label="Toggle Dark Mode">
+                    <i id="themeIcon" class="fa-solid fa-sun text-base"></i>
+                    <span id="themeLabel" class="hidden sm:inline">الوضع النهاري</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Quick Navigation Bar -->
+        <div class="lg:hidden flex items-center justify-around border-t border-slate-200/70 dark:border-slate-800/70 bg-slate-50/90 dark:bg-slate-900/90 px-2 py-2 text-xs font-bold overflow-x-auto gap-1">
+            <a href="#journey" data-i18n="navJourneyShort" class="px-2.5 py-1.5 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-amber-500/10 hover:text-amber-500 whitespace-nowrap">رحلة الكتاب</a>
+            <a href="#quiz" data-i18n="navQuizShort" class="px-2.5 py-1.5 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-amber-500/10 hover:text-amber-500 whitespace-nowrap">اختبار الجلاد</a>
+            <a href="#reframer" data-i18n="navReframerShort" class="px-2.5 py-1.5 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-amber-500/10 hover:text-amber-500 whitespace-nowrap">محول الصوت</a>
+            <a href="#breaker" data-i18n="navBreakerShort" class="px-2.5 py-1.5 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-amber-500/10 hover:text-amber-500 whitespace-nowrap">كسر التسويف</a>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="relative z-10 flex-grow">
+
+        <!-- HERO SECTION -->
+        <section id="hero" class="py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                
+                <!-- Hero Text Column -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/15 border border-amber-500/30 text-amber-700 dark:text-amber-300 text-xs sm:text-sm font-bold">
+                        <span class="w-2 h-2 rounded-full bg-amber-500 animate-ping"></span>
+                        <span data-i18n="heroBadge">تطبيق تفاعلي مستوحى من حلقة Abouawd Studio وكتاب د. عماد رشاد عثمان</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight text-slate-900 dark:text-white">
+                        <span data-i18n="heroTitlePart1">كيف تتخلص من</span>
+                        <span class="bg-gradient-to-r from-amber-500 via-rose-500 to-emerald-500 bg-clip-text text-transparent block mt-1" data-i18n="heroTitleHighlight">
+                            سجن المثالية والجلاد الداخلي؟
+                        </span>
+                    </h1>
+
+                    <p data-i18n="heroSubtitle" class="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl">
+                        الكمالية ليست سعيًا نحو التميز، بل هي درعٌ صنعه خوفك القديم لكي يحميك من الرفض والنقد، لكنه بمرور الوقت تحول إلى سجنٍ يقيد خطواتك. استكشف رحلة كتاب «الجلاد تحت جلدي» عبر أدوات تشخيصية وتدريبات عملية تفاعلية.
+                    </p>
+
+                    <!-- Three Voices Banner from 00:00:00 of the video -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+                        <div class="p-3.5 rounded-2xl bg-white dark:bg-slate-900/90 border border-rose-500/25 shadow-sm">
+                            <div class="flex items-center gap-2 text-rose-500 font-bold text-xs uppercase mb-1">
+                                <i class="fa-solid fa-bolt"></i>
+                                <span data-i18n="voiceWhenError">عندما تخطئ</span>
+                            </div>
+                            <p data-i18n="voiceWhenErrorQuote" class="text-sm font-bold text-slate-800 dark:text-slate-200">«لماذا فعلت هذا؟ لا يجب أن تغلط أبدًا!»</p>
+                        </div>
+                        <div class="p-3.5 rounded-2xl bg-white dark:bg-slate-900/90 border border-amber-500/25 shadow-sm">
+                            <div class="flex items-center gap-2 text-amber-500 font-bold text-xs uppercase mb-1">
+                                <i class="fa-solid fa-trophy"></i>
+                                <span data-i18n="voiceWhenSuccess">عندما تنجح</span>
+                            </div>
+                            <p data-i18n="voiceWhenSuccessQuote" class="text-sm font-bold text-slate-800 dark:text-slate-200">«كان من الممكن أن يكون أفضل من ذلك!»</p>
+                        </div>
+                        <div class="p-3.5 rounded-2xl bg-white dark:bg-slate-900/90 border border-purple-500/25 shadow-sm">
+                            <div class="flex items-center gap-2 text-purple-500 font-bold text-xs uppercase mb-1">
+                                <i class="fa-solid fa-bed"></i>
+                                <span data-i18n="voiceWhenRest">عندما ترتاح</span>
+                            </div>
+                            <p data-i18n="voiceWhenRestQuote" class="text-sm font-bold text-slate-800 dark:text-slate-200">«أنت كسول.. كيف تضيع وقتك هكذا؟»</p>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-wrap items-center gap-3.5 pt-2">
+                        <a href="#quiz" class="px-6 py-3.5 rounded-2xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-extrabold text-sm sm:text-base shadow-lg shadow-amber-500/25 flex items-center gap-2.5 transform active:scale-95 transition">
+                            <i class="fa-solid fa-gauge-high"></i>
+                            <span data-i18n="ctaStartQuiz">اختبر سطوة الجلاد الداخلي</span>
+                        </a>
+                        <a href="#reframer" class="px-5 py-3.5 rounded-2xl bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-100 font-bold text-sm sm:text-base border border-slate-200 dark:border-slate-700 shadow-sm flex items-center gap-2 transition">
+                            <i class="fa-solid fa-heart-pulse text-emerald-500"></i>
+                            <span data-i18n="ctaReframer">محول الصوت الداخلي</span>
+                        </a>
+                        <a href="https://youtu.be/Fnle_Fg8Png" target="_blank" rel="noopener noreferrer" class="px-4 py-3.5 rounded-2xl bg-rose-500/10 hover:bg-rose-500/20 text-rose-600 dark:text-rose-400 font-bold text-sm border border-rose-500/30 flex items-center gap-2 transition">
+                            <i class="fa-brands fa-youtube text-lg"></i>
+                            <span data-i18n="ctaWatchVideo">مشاهدة الفيديو الأصلي</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Interactive Visual Card & Video Player Column -->
+                <div class="lg:col-span-5">
+                    <div class="rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-2xl overflow-hidden">
+                        <!-- Top Bar -->
+                        <div class="p-4 bg-slate-100/80 dark:bg-slate-800/70 border-b border-slate-200 dark:border-slate-700/70 flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <span class="w-3 h-3 rounded-full bg-rose-500"></span>
+                                <span class="w-3 h-3 rounded-full bg-amber-500"></span>
+                                <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+                                <span data-i18n="videoCardHeader" class="text-xs font-bold text-slate-600 dark:text-slate-300 ms-2">
+                                    المحاكي البصري: الدرع الذي تحول إلى سجن
+                                </span>
+                            </div>
+                            <span class="text-xs font-mono px-2 py-0.5 rounded bg-amber-500/20 text-amber-600 dark:text-amber-400">07:45</span>
+                        </div>
+
+                        <!-- Interactive Metaphor Switcher inside Hero Card -->
+                        <div class="p-6 space-y-5">
+                            <div id="metaphorVisualBox" class="relative rounded-2xl p-6 bg-gradient-to-br from-rose-950/90 via-slate-900 to-slate-950 text-white border border-rose-500/30 text-center space-y-3 transition-all duration-500">
+                                <div id="metaphorIconWrap" class="w-16 h-16 mx-auto rounded-2xl bg-rose-500/20 border border-rose-500/40 flex items-center justify-center text-3xl text-rose-400 animate-float">
+                                    <i id="metaphorIcon" class="fa-solid fa-dungeon"></i>
+                                </div>
+                                <span id="metaphorBadge" class="inline-block text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-rose-500/20 text-rose-300">
+                                    حالة السجن (الكمالية المرهقة)
+                                </span>
+                                <h3 id="metaphorTitle" class="text-xl font-extrabold">
+                                    «لازم أكون مثاليًا حتى لا يرفضني أحد»
+                                </h3>
+                                <p id="metaphorDesc" class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                                    تبدأ المثالية كدرع لحمايتك من الخوف والنقد [00:02:28]، لكنك تصبح أسيرًا داخل هذا الدرع الثقيل: خوف من الخطأ، خوف من النجاح، وشلل عن المبادرة.
+                                </p>
+                            </div>
+
+                            <!-- Toggle button between Prison Mode and Compassion Mode -->
+                            <div class="grid grid-cols-2 gap-2.5 bg-slate-100 dark:bg-slate-800 p-1.5 rounded-2xl">
+                                <button id="btnPrisonMode" onclick="setHeroMetaphor('prison')" class="py-2.5 px-3 rounded-xl font-bold text-xs sm:text-sm bg-rose-600 text-white shadow flex items-center justify-center gap-2 transition">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                    <span data-i18n="btnPrisonLabel">درع المثالية (السجن)</span>
+                                </button>
+                                <button id="btnFreedomMode" onclick="setHeroMetaphor('freedom')" class="py-2.5 px-3 rounded-xl font-bold text-xs sm:text-sm text-slate-700 dark:text-slate-300 hover:bg-white/60 dark:hover:bg-slate-700 flex items-center justify-center gap-2 transition">
+                                    <i class="fa-solid fa-Dove"></i>
+                                    <span data-i18n="btnFreedomLabel">الرحمة مع النفس (الحرية)</span>
+                                </button>
+                            </div>
+
+                            <!-- Core Quote from Book -->
+                            <div class="p-4 rounded-2xl bg-amber-500/10 border border-amber-500/25 flex items-start gap-3">
+                                <i class="fa-solid fa-quote-right text-amber-500 text-xl mt-1 shrink-0"></i>
+                                <div>
+                                    <p data-i18n="heroBookQuote" class="text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-200 leading-relaxed">
+                                        «الإنسان يصير عظيمًا ليس لأنه لا يخطئ، بل لأنه يخطئ ويتعلم، ويقع ويقوم من غير ما يكون هناك جلاد داخلي يجلده مع كل خطوة.»
+                                    </p>
+                                    <span data-i18n="heroBookAuthor" class="block text-xs text-amber-600 dark:text-amber-400 font-bold mt-1.5">
+                                        — خلاصة كتاب «الجلاد تحت جلدي» للدكتور عماد رشاد عثمان [00:07:03]
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 1: INTERACTIVE CONCEPT EXPLORER & VIDEO TIMELINE -->
+        <section id="journey" class="py-14 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-200/80 dark:border-slate-800/80">
+            <div class="text-center max-w-3xl mx-auto mb-10 space-y-3">
+                <span data-i18n="sec1Tag" class="px-3.5 py-1 rounded-full bg-amber-500/15 text-amber-600 dark:text-amber-400 font-bold text-xs uppercase tracking-wider">
+                    القسم الأول • الخريطة المعرفية الكاملة
+                </span>
+                <h2 data-i18n="sec1Title" class="text-2xl sm:text-4xl font-black text-slate-900 dark:text-white">
+                    المحطات الخمس لكتاب «الجلاد تحت جلدي»
+                </h2>
+                <p data-i18n="sec1Desc" class="text-sm sm:text-base text-slate-600 dark:text-slate-400">
+                    انقر على أي محطة زمنية لاستكشاف التحليل النفسي العميق، الأمثلة الواقعية من الفيديو، والتطبيق العملي لها في حياتك اليومية.
+                </p>
+            </div>
+
+            <!-- Interactive Chapter Selector Tabs -->
+            <div id="chapterTabsContainer" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 mb-8">
+                <!-- Populated dynamically via JS for seamless bilingual switching -->
+            </div>
+
+            <!-- Active Chapter Detailed Display Card -->
+            <div id="activeChapterCard" class="rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xl p-6 sm:p-8 lg:p-10 transition-all">
+                <!-- Populated dynamically via JS -->
+            </div>
+        </section>
+
+        <!-- SECTION 2: INTERACTIVE SELF-ASSESSMENT QUIZ (مقياس سطوة الجلاد الداخلي) -->
+        <section id="quiz" class="py-14 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-200/80 dark:border-slate-800/80">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Left Column: Quiz Header & Live Gauge Meter -->
+                <div class="lg:col-span-5 space-y-6 lg:sticky lg:top-28">
+                    <div class="space-y-3">
+                        <span data-i18n="sec2Tag" class="px-3.5 py-1 rounded-full bg-rose-500/15 text-rose-600 dark:text-rose-400 font-bold text-xs uppercase tracking-wider">
+                            القسم الثاني • أداة تشخيصية تفاعلية
+                        </span>
+                        <h2 data-i18n="sec2Title" class="text-2xl sm:text-4xl font-black text-slate-900 dark:text-white">
+                            مقياس سطوة الجلاد الداخلي
+                        </h2>
+                        <p data-i18n="sec2Desc" class="text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed">
+                            أجب بصدق عن هذه المواقف الستة المستخلصة من محاور الكتاب، لتكتشف مدى سيطرة «الكمالية الدفاعية» و«التفكير القطبي» على قراراتك وراحتك النفسية.
+                        </p>
+                    </div>
+
+                    <!-- Live Visual Score Card -->
+                    <div class="rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 shadow-lg text-center space-y-5">
+                        <div class="relative w-44 h-44 mx-auto flex items-center justify-center">
+                            <svg class="w-full h-full -rotate-90 transform" viewBox="0 0 120 120">
+                                <circle cx="60" cy="60" r="50" stroke="currentColor" stroke-width="10" fill="transparent" class="text-slate-200 dark:text-slate-800" />
+                                <circle id="quizGaugeCircle" cx="60" cy="60" r="50" stroke="currentColor" stroke-width="10" fill="transparent"
+                                    stroke-dasharray="314.16" stroke-dashoffset="314.16" stroke-linecap="round"
+                                    class="text-amber-500 gauge-circle" />
+                            </svg>
+                            <div class="absolute inset-0 flex flex-col items-center justify-center">
+                                <span id="quizScorePercent" class="text-3xl font-black text-slate-900 dark:text-white">0%</span>
+                                <span id="quizAnsweredCount" class="text-xs font-bold text-slate-500 dark:text-slate-400 mt-0.5">0 / 6</span>
+                            </div>
+                        </div>
+
+                        <div id="quizResultBox" class="p-4 rounded-2xl bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/70 space-y-2">
+                            <h3 id="quizStatusTitle" class="text-base font-extrabold text-amber-600 dark:text-amber-400">
+                                ابدأ الإجابة على الأسئلة الستة
+                            </h3>
+                            <p id="quizStatusDesc" class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                                اختر الدرجة التي تمثلك في كل موقف ليظهر لك التشخيص النفسي والتوصية العملية من الكتاب.
+                            </p>
+                        </div>
+
+                        <button onclick="resetQuiz()" class="w-full py-2.5 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-xs sm:text-sm font-bold text-slate-700 dark:text-slate-300 flex items-center justify-center gap-2 transition">
+                            <i class="fa-solid fa-rotate-right"></i>
+                            <span data-i18n="btnResetQuiz">إعادة ضبط المقياس</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Column: 6 Interactive Questions -->
+                <div id="quizQuestionsContainer" class="lg:col-span-7 space-y-4">
+                    <!-- Populated via JS -->
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 3: INTERACTIVE VOICE REFRAMER (محول الصوت الداخلي: من الجلاد إلى الرحمة) -->
+        <section id="reframer" class="py-14 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-200/80 dark:border-slate-800/80">
+            <div class="text-center max-w-3xl mx-auto mb-10 space-y-3">
+                <span data-i18n="sec3Tag" class="px-3.5 py-1 rounded-full bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 font-bold text-xs uppercase tracking-wider">
+                    القسم الثالث • تدريب الرحمة مع النفس [00:06:51]
+                </span>
+                <h2 data-i18n="sec3Title" class="text-2xl sm:text-4xl font-black text-slate-900 dark:text-white">
+                    محوّل الصوت الداخلي: من الجلاد إلى الرحمة
+                </h2>
+                <p data-i18n="sec3Desc" class="text-sm sm:text-base text-slate-600 dark:text-slate-400">
+                    اختر أحد المواقف اليومية التي يهاجمك فيها «الجلاد الداخلي»، أو اكتب الفكرة التي تدور في ذهنك الآن، لترى كيف يحللها الكتاب وكيف تحولها إلى حوار رحيم وبنّاء.
+                </p>
+            </div>
+
+            <!-- Scenario Selector Pills -->
+            <div id="scenarioButtonsContainer" class="flex flex-wrap items-center justify-center gap-2.5 mb-8">
+                <!-- Populated via JS -->
+            </div>
+
+            <!-- 3-Column Transformation Cards -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
+                
+                <!-- Card 1: The Executioner's Voice -->
+                <div class="rounded-3xl bg-white dark:bg-slate-900 border-2 border-rose-500/30 p-6 shadow-lg flex flex-col justify-between relative overflow-hidden">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 rounded-full bg-rose-500/15 text-rose-600 dark:text-rose-400 font-extrabold text-xs flex items-center gap-1.5">
+                                <i class="fa-solid fa-gavel"></i>
+                                <span data-i18n="cardCriticBadge">1. صوت الجلاد الداخلي</span>
+                            </span>
+                            <span class="text-xs font-mono text-slate-400">[00:00:15]</span>
+                        </div>
+                        <h3 id="reframeCriticTitle" class="text-lg font-extrabold text-slate-900 dark:text-white"></h3>
+                        <div class="p-4 rounded-2xl bg-rose-500/10 border border-rose-500/20 text-rose-900 dark:text-rose-200 font-bold text-sm sm:text-base leading-relaxed" id="reframeCriticQuote"></div>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-200 dark:border-slate-800 flex items-center gap-2 text-xs text-rose-600 dark:text-rose-400 font-semibold">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        <span id="reframeCriticEffect"></span>
+                    </div>
+                </div>
+
+                <!-- Card 2: The Hidden Fear & All-or-Nothing Trap -->
+                <div class="rounded-3xl bg-white dark:bg-slate-900 border-2 border-amber-500/30 p-6 shadow-lg flex flex-col justify-between relative overflow-hidden">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 rounded-full bg-amber-500/15 text-amber-600 dark:text-amber-400 font-extrabold text-xs flex items-center gap-1.5">
+                                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                                <span data-i18n="cardTrapBadge">2. الجذر النفسي والخوف الخفي</span>
+                            </span>
+                            <span class="text-xs font-mono text-slate-400">[00:01:54]</span>
+                        </div>
+                        <h3 data-i18n="cardTrapTitle" class="text-lg font-extrabold text-slate-900 dark:text-white">
+                            ما الذي يختبئ خلف هذا الصوت؟
+                        </h3>
+                        <p id="reframeTrapAnalysis" class="text-sm text-slate-700 dark:text-slate-300 leading-relaxed"></p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-200 dark:border-slate-800 flex items-center gap-2 text-xs text-amber-600 dark:text-amber-400 font-semibold">
+                        <i class="fa-solid fa-circle-half-stroke"></i>
+                        <span id="reframeTrapType"></span>
+                    </div>
+                </div>
+
+                <!-- Card 3: The Compassionate Voice (Recovery) -->
+                <div class="rounded-3xl bg-gradient-to-b from-emerald-500/10 via-white to-white dark:from-emerald-950/40 dark:via-slate-900 dark:to-slate-900 border-2 border-emerald-500/40 p-6 shadow-xl flex flex-col justify-between relative overflow-hidden">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-700 dark:text-emerald-300 font-extrabold text-xs flex items-center gap-1.5">
+                                <i class="fa-solid fa-seedling"></i>
+                                <span data-i18n="cardHealBadge">3. صوت الرحمة مع النفس</span>
+                            </span>
+                            <span class="text-xs font-mono text-emerald-500">[00:06:51]</span>
+                        </div>
+                        <h3 data-i18n="cardHealTitle" class="text-lg font-extrabold text-slate-900 dark:text-white">
+                            الرد المتوازن والرحيم بالذات
+                        </h3>
+                        <div class="p-4 rounded-2xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-950 dark:text-emerald-100 font-bold text-sm sm:text-base leading-relaxed" id="reframeHealQuote"></div>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-emerald-500/20 flex items-center justify-between gap-2">
+                        <span id="reframeActionStep" class="text-xs text-emerald-700 dark:text-emerald-300 font-bold"></span>
+                        <button onclick="copyCompassionateVoice()" class="px-3 py-1.5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold text-xs flex items-center gap-1.5 shrink-0 transition">
+                            <i class="fa-regular fa-copy"></i>
+                            <span id="copyBtnLabel" data-i18n="btnCopyVoice">نسخ العبارة</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Custom User Thought Reframer Box -->
+            <div class="mt-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 sm:p-8 shadow-md">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                    <div class="lg:col-span-5 space-y-2">
+                        <h4 data-i18n="customReframeTitle" class="text-lg font-extrabold text-slate-900 dark:text-white flex items-center gap-2">
+                            <i class="fa-solid fa-wand-magic-sparkles text-amber-500"></i>
+                            <span>اكتب جملة يرددها جلادك الداخلي الآن:</span>
+                        </h4>
+                        <p data-i18n="customReframeSub" class="text-xs sm:text-sm text-slate-600 dark:text-slate-400">
+                            سيقوم المحول بتفكيك «التفكير القطبي» فيها وصياغة بديل رحيم مستوحى من منهج الكتاب.
+                        </p>
+                    </div>
+                    <div class="lg:col-span-7 flex flex-col sm:flex-row gap-3">
+                        <input id="customCriticInput" type="text" data-i18n-placeholder="customInputPlaceholder" placeholder="مثال: إذا لم أنجز المهمة بشكل كامل اليوم فأنا فاشل..." class="flex-grow px-4 py-3.5 rounded-2xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm font-semibold text-slate-900 dark:text-white focus:outline-none focus:border-amber-500">
+                        <button onclick="generateCustomReframe()" class="px-6 py-3.5 rounded-2xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold text-sm whitespace-nowrap flex items-center justify-center gap-2 shadow-md transition">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                            <span data-i18n="btnTransformThought">تحويل إلى رحمة</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: ALL-OR-NOTHING PARALYSIS BREAKER (محطم الشلل النفسي والتسويف الكمالي) -->
+        <section id="breaker" class="py-14 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-200/80 dark:border-slate-800/80">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Left Column: Interactive Task Deconstructor -->
+                <div class="lg:col-span-7 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 sm:p-8 shadow-xl space-y-6">
+                    <div class="space-y-2">
+                        <span data-i18n="sec4Tag" class="px-3.5 py-1 rounded-full bg-amber-500/15 text-amber-600 dark:text-amber-400 font-bold text-xs uppercase tracking-wider">
+                            القسم الرابع • كسر التفكير القطبي (الأبيض أو الأسود) [00:04:58]
+                        </span>
+                        <h2 data-i18n="sec4Title" class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white">
+                            محطم الشلل النفسي والتسويف الكمالي
+                        </h2>
+                        <p data-i18n="sec4Desc" class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                            يوضح الفيديو أن التسويف ليس كسلًا، بل هو نتيجة «التفكير القطبي»: إما أن أنجز المهمة بنسبة 100% بلا أي غلطة، أو لا أبدأ أصلًا [00:05:31]. استخدم هذه الأداة لتفكيك المهمة المؤجلة إلى «بداية بشرية غير مثالية بنسبة 10%».
+                        </p>
+                    </div>
+
+                    <!-- Quick Preset Task Buttons -->
+                    <div class="space-y-2">
+                        <span data-i18n="presetLabel" class="text-xs font-bold text-slate-500 dark:text-slate-400 block">
+                            اختر مهمة شائعة أو اكتب مهمتك الخاصة:
+                        </span>
+                        <div id="presetTasksContainer" class="flex flex-wrap gap-2">
+                            <!-- Populated via JS -->
+                        </div>
+                    </div>
+
+                    <!-- Inputs for Task Breakdown -->
+                    <div class="space-y-4">
+                        <div>
+                            <label data-i18n="labelDelayedTask" class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+                                1. المهمة التي تؤجلها بسبب الخوف من عدم إتقانها:
+                            </label>
+                            <input id="inputTaskName" type="text" class="w-full px-4 py-3 rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm font-bold text-slate-900 dark:text-white focus:outline-none focus:border-amber-500">
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="p-4 rounded-2xl bg-rose-500/5 border border-rose-500/25 space-y-2">
+                                <label class="flex items-center gap-1.5 text-xs font-extrabold text-rose-600 dark:text-rose-400">
+                                    <i class="fa-solid fa-ban"></i>
+                                    <span data-i18n="labelAllOrNothing">وهم الـ 100% المشلّ (شرط الجلاد):</span>
+                                </label>
+                                <textarea id="inputPerfectIllusion" rows="3" class="w-full p-2.5 rounded-xl bg-white dark:bg-slate-900 border border-rose-500/20 text-xs sm:text-sm text-slate-800 dark:text-slate-200 focus:outline-none"></textarea>
+                            </div>
+
+                            <div class="p-4 rounded-2xl bg-emerald-500/5 border border-emerald-500/25 space-y-2">
+                                <label class="flex items-center gap-1.5 text-xs font-extrabold text-emerald-600 dark:text-emerald-400">
+                                    <i class="fa-solid fa-shoe-prints"></i>
+                                    <span data-i18n="labelImperfectStep">خطوة الـ 10% المسموح لها بالخطأ:</span>
+                                </label>
+                                <textarea id="inputImperfectStep" rows="3" class="w-full p-2.5 rounded-xl bg-white dark:bg-slate-900 border border-emerald-500/20 text-xs sm:text-sm text-slate-800 dark:text-slate-200 focus:outline-none"></textarea>
+                            </div>
+                        </div>
+
+                        <button onclick="saveImperfectStepToLog()" class="w-full py-3.5 px-6 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-slate-950 font-extrabold text-sm shadow-lg shadow-emerald-500/20 flex items-center justify-center gap-2 transition">
+                            <i class="fa-solid fa-check-double"></i>
+                            <span data-i18n="btnCommitStep">اعتماد الخطوة غير المثالية وبدء مؤقت الـ 5 دقائق</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Column: 5-Minute Imperfect Action Timer & Progress Log -->
+                <div class="lg:col-span-5 space-y-6">
+                    <!-- 5-Minute Timer Card -->
+                    <div class="rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 shadow-xl text-center space-y-5">
+                        <div class="flex items-center justify-between">
+                            <span data-i18n="timerBadge" class="px-3 py-1 rounded-full bg-amber-500/15 text-amber-600 dark:text-amber-400 font-bold text-xs">
+                                مؤقت البداية الآمنة (5 دقائق)
+                            </span>
+                            <span class="text-xs font-mono text-slate-400">10% Action</span>
+                        </div>
+
+                        <div class="py-3">
+                            <div id="timerDisplay" class="text-5xl sm:text-6xl font-black font-mono tracking-wider text-slate-900 dark:text-white">
+                                05:00
+                            </div>
+                            <p id="timerEncourageText" data-i18n="timerDefaultMsg" class="text-xs sm:text-sm font-semibold text-emerald-600 dark:text-emerald-400 mt-2">
+                                الهدف ليس الإتقان، الهدف فقط كسر حاجز الخوف لمدة 5 دقائق!
+                            </p>
+                        </div>
+
+                        <div class="flex items-center justify-center gap-3">
+                            <button id="btnStartTimer" onclick="toggleActionTimer()" class="px-6 py-3 rounded-2xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold text-sm flex items-center gap-2 shadow transition">
+                                <i id="timerBtnIcon" class="fa-solid fa-play"></i>
+                                <span id="timerBtnText" data-i18n="btnStartTimer">ابدأ 5 دقائق غير مثالية</span>
+                            </button>
+                            <button onclick="resetActionTimer()" class="p-3 rounded-2xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 transition" title="Reset">
+                                <i class="fa-solid fa-rotate-left"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Completed Imperfect Steps Log -->
+                    <div class="rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 shadow-md space-y-4">
+                        <div class="flex items-center justify-between">
+                            <h3 data-i18n="logTitle" class="text-sm font-extrabold text-slate-900 dark:text-white flex items-center gap-2">
+                                <i class="fa-solid fa-list-check text-emerald-500"></i>
+                                <span>سجل خطواتك المتحررة من المثالية</span>
+                            </h3>
+                            <span id="logCounterBadge" class="px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 text-xs font-bold">0</span>
+                        </div>
+                        <ul id="imperfectStepsList" class="space-y-2.5 max-h-56 overflow-y-auto pe-1">
+                            <!-- Populated via JS -->
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Toast Notification Container (No alert() used!) -->
+    <div id="toastBanner" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 translate-y-4 transition-all duration-300">
+        <div class="px-5 py-3 rounded-2xl bg-slate-900 dark:bg-amber-500 text-white dark:text-slate-950 font-extrabold text-xs sm:text-sm shadow-2xl flex items-center gap-2.5 border border-slate-700 dark:border-amber-400">
+            <i class="fa-solid fa-circle-check text-emerald-400 dark:text-slate-950"></i>
+            <span id="toastMessage">تم الحفظ بنجاح</span>
+        </div>
+    </div>
+
+    <!-- FOOTER WITH MANDATORY SIGNATURE -->
+    <footer class="relative z-10 mt-16 border-t border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-start">
+                
+                <!-- Book & Video Credit -->
+                <div class="space-y-1.5">
+                    <div class="flex items-center justify-center md:justify-start gap-2 font-black text-slate-900 dark:text-white text-base">
+                        <i class="fa-solid fa-book-open text-amber-500"></i>
+                        <span data-i18n="footerBookTitle">كتاب «الجلاد تحت جلدي» — د. عماد رشاد عثمان</span>
+                    </div>
+                    <p data-i18n="footerVideoSource" class="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+                        مبني على مراجعة وحلقة: «كيف تتخلص من سجن المثالية؟» من قناة Abouawd Studio
+                    </p>
+                </div>
+
+                <!-- MANDATORY DESIGNER CREDIT BOX -->
+                <div class="px-6 py-4 rounded-2xl bg-gradient-to-r from-amber-500/15 via-rose-500/10 to-emerald-500/15 border border-amber-500/30 shadow-sm text-center">
+                    <p id="footerSignaturePrimary" class="text-sm sm:text-base font-black text-slate-900 dark:text-white tracking-wide">
+                        تصميم محمد عوض خير بمساعدة Gemini 4 Argon
+                    </p>
+                    <p id="footerSignatureSecondary" class="text-xs font-semibold text-amber-700 dark:text-amber-400 mt-0.5">
+                        Designed by Mohamed Awad Khair with the help of Gemini 4 Argon
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- APPLICATION LOGIC & BILINGUAL DATA STORE -->
+    <script>
+        // ==========================================
+        // 1. STATE MANAGEMENT
+        // ==========================================
+        let currentLang = localStorage.getItem('app_lang') || 'ar';
+        let currentTheme = localStorage.getItem('app_theme') || 'dark';
+        let currentHeroMode = 'prison';
+        let activeChapterIndex = 0;
+        let activeScenarioIndex = 0;
+        let quizAnswers = [null, null, null, null, null, null]; // 6 questions, values 0..3
+        let timerSeconds = 300; // 5 minutes
+        let timerInterval = null;
+        let imperfectLog = [];
+
+        // ==========================================
+        // 2. BILINGUAL DICTIONARY (ARABIC & ENGLISH)
+        // ==========================================
+        const i18n = {
+            ar: {
+                pageTitle: "الجلاد تحت جلدي | كيف تتخلص من سجن المثالية؟",
+                navBrandTitle: "الجلاد تحت جلدي",
+                navBrandSub: "التحرر من سجن المثالية • د. عماد رشاد عثمان",
+                navJourney: "خريطة الحلقة والكتاب",
+                navQuiz: "مقياس الجلاد الداخلي",
+                navReframer: "محول الصوت الداخلي",
+                navBreaker: "محطم الشلل والتسويف",
+                navJourneyShort: "رحلة الكتاب",
+                navQuizShort: "اختبار الجلاد",
+                navReframerShort: "محول الصوت",
+                navBreakerShort: "كسر التسويف",
+                themeLightLabel: "الوضع النهاري",
+                themeDarkLabel: "الوضع الليلي",
+                heroBadge: "تطبيق تفاعلي مستوحى من حلقة Abouawd Studio وكتاب د. عماد رشاد عثمان",
+                heroTitlePart1: "كيف تتخلص من",
+                heroTitleHighlight: "سجن المثالية والجلاد الداخلي؟",
+                heroSubtitle: "الكمالية ليست سعيًا نحو التميز، بل هي درعٌ صنعه خوفك القديم لكي يحميك من الرفض والنقد، لكنه بمرور الوقت تحول إلى سجنٍ يقيد خطواتك. استكشف رحلة كتاب «الجلاد تحت جلدي» عبر أدوات تشخيصية وتدريبات عملية تفاعلية.",
+                voiceWhenError: "عندما تخطئ [00:00:08]",
+                voiceWhenErrorQuote: "«لماذا فعلت هذا؟ لا يجب أن تغلط أبدًا!»",
+                voiceWhenSuccess: "عندما تنجح [00:00:12]",
+                voiceWhenSuccessQuote: "«كان من الممكن أن يكون أفضل من ذلك!»",
+                voiceWhenRest: "عندما ترتاح [00:00:16]",
+                voiceWhenRestQuote: "«أنت كسول.. كيف تضيع وقتك هكذا؟»",
+                ctaStartQuiz: "اختبر سطوة الجلاد الداخلي",
+                ctaReframer: "محول الصوت الداخلي",
+                ctaWatchVideo: "مشاهدة الفيديو الأصلي",
+                videoCardHeader: "المحاكي البصري: الدرع الذي تحول إلى سجن",
+                btnPrisonLabel: "درع المثالية (السجن)",
+                btnFreedomLabel: "الرحمة مع النفس (الحرية)",
+                heroBookQuote: "«الإنسان يصير عظيمًا ليس لأنه لا يخطئ، بل لأنه يخطئ ويتعلم، ويقع ويقوم من غير ما يكون هناك جلاد داخلي يجلده مع كل خطوة.»",
+                heroBookAuthor: "— خلاصة كتاب «الجلاد تحت جلدي» للدكتور عماد رشاد عثمان [00:07:03]",
+                metaphorPrisonBadge: "حالة السجن (الكمالية الدفاعية)",
+                metaphorPrisonTitle: "«لازم أكون مثاليًا حتى لا يرفضني أحد»",
+                metaphorPrisonDesc: "تبدأ المثالية كدرع لحمايتك من الخوف والنقد [00:02:28]، لكنك تصبح أسيرًا داخل هذا الدرع الثقيل: خوف من الخطأ، خوف من النجاح، وشلل عن المبادرة.",
+                metaphorFreedomBadge: "حالة التعافي (الرحمة مع النفس)",
+                metaphorFreedomTitle: "«أنا إنسان أتعلم بالتجربة والخطأ دون جلد للذات»",
+                metaphorFreedomDesc: "عندما تخلع درع الكمالية وتفهم خوفك القديم [00:06:27]، تتحول الأخطاء من جريمة تستحق العقاب إلى خطوات طبيعية للنمو الحقيقي.",
+                sec1Tag: "القسم الأول • الخريطة المعرفية الكاملة",
+                sec1Title: "المحطات الخمس لكتاب «الجلاد تحت جلدي»",
+                sec1Desc: "انقر على أي محطة زمنية لاستكشاف التحليل النفسي العميق، الأمثلة الواقعية من الفيديو، والتطبيق العملي لها في حياتك اليومية.",
+                sec2Tag: "القسم الثاني • أداة تشخيصية تفاعلية",
+                sec2Title: "مقياس سطوة الجلاد الداخلي",
+                sec2Desc: "أجب بصدق عن هذه المواقف الستة المستخلصة من محاور الكتاب، لتكتشف مدى سيطرة «الكمالية الدفاعية» و«التفكير القطبي» على قراراتك وراحتك النفسية.",
+                btnResetQuiz: "إعادة ضبط المقياس",
+                quizInitTitle: "ابدأ الإجابة على الأسئلة الستة",
+                quizInitDesc: "اختر الدرجة التي تمثلك في كل موقف ليظهر لك التشخيص النفسي والتوصية العملية من الكتاب.",
+                sec3Tag: "القسم الثالث • تدريب الرحمة مع النفس [00:06:51]",
+                sec3Title: "محوّل الصوت الداخلي: من الجلاد إلى الرحمة",
+                sec3Desc: "اختر أحد المواقف اليومية التي يهاجمك فيها «الجلاد الداخلي»، أو اكتب الفكرة التي تدور في ذهنك الآن، لترى كيف يحللها الكتاب وكيف تحولها إلى حوار رحيم وبنّاء.",
+                cardCriticBadge: "1. صوت الجلاد الداخلي",
+                cardTrapBadge: "2. الجذر النفسي والخوف الخفي",
+                cardTrapTitle: "ما الذي يختبئ خلف هذا الصوت؟",
+                cardHealBadge: "3. صوت الرحمة مع النفس",
+                cardHealTitle: "الرد المتوازن والرحيم بالذات",
+                btnCopyVoice: "نسخ العبارة",
+                customReframeTitle: "اكتب جملة يرددها جلادك الداخلي الآن:",
+                customReframeSub: "سيقوم المحول بتفكيك «التفكير القطبي» فيها وصياغة بديل رحيم مستوحى من منهج الكتاب.",
+                customInputPlaceholder: "مثال: إذا لم أنجز المهمة بشكل كامل اليوم فأنا فاشل...",
+                btnTransformThought: "تحويل إلى رحمة",
+                sec4Tag: "القسم الرابع • كسر التفكير القطبي (الأبيض أو الأسود) [00:04:58]",
+                sec4Title: "محطم الشلل النفسي والتسويف الكمالي",
+                sec4Desc: "يوضح الفيديو أن التسويف ليس كسلًا، بل هو نتيجة «التفكير القطبي»: إما أن أنجز المهمة بنسبة 100% بلا أي غلطة، أو لا أبدأ أصلًا [00:05:31]. استخدم هذه الأداة لتفكيك المهمة المؤجلة إلى «بداية بشرية غير مثالية بنسبة 10%».",
+                presetLabel: "اختر مهمة شائعة أو اكتب مهمتك الخاصة:",
+                labelDelayedTask: "1. المهمة التي تؤجلها بسبب الخوف من عدم إتقانها:",
+                labelAllOrNothing: "وهم الـ 100% المشلّ (شرط الجلاد):",
+                labelImperfectStep: "خطوة الـ 10% المسموح لها بالخطأ:",
+                btnCommitStep: "اعتماد الخطوة غير المثالية وبدء مؤقت الـ 5 دقائق",
+                timerBadge: "مؤقت البداية الآمنة (5 دقائق)",
+                timerDefaultMsg: "الهدف ليس الإتقان، الهدف فقط كسر حاجز الخوف لمدة 5 دقائق!",
+                btnStartTimer: "ابدأ 5 دقائق غير مثالية",
+                btnPauseTimer: "إيقاف مؤقت",
+                logTitle: "سجل خطواتك المتحررة من المثالية",
+                footerBookTitle: "كتاب «الجلاد تحت جلدي» — د. عماد رشاد عثمان",
+                footerVideoSource: "مبني على مراجعة وحلقة: «كيف تتخلص من سجن المثالية؟» من قناة Abouawd Studio",
+                toastCopied: "تم نسخ عبارة الرحمة مع النفس بنجاح!",
+                toastStepSaved: "تمت إضافة خطوتك غير المثالية وبدء المؤقت!",
+                toastCustomReframed: "تم تفكيك الفكرة وتحويلها إلى صوت رحيم بالذات!"
+            },
+            en: {
+                pageTitle: "The Executioner Under My Skin | Break Free from Perfectionism",
+                navBrandTitle: "The Executioner Under My Skin",
+                navBrandSub: "Breaking Free from Perfectionism • Dr. Emad Rashad Othman",
+                navJourney: "Book & Video Journey",
+                navQuiz: "Inner Executioner Scale",
+                navReframer: "Inner Voice Reframer",
+                navBreaker: "Paralysis Breaker",
+                navJourneyShort: "Journey",
+                navQuizShort: "Quiz",
+                navReframerShort: "Reframer",
+                navBreakerShort: "Action Breaker",
+                themeLightLabel: "Light Mode",
+                themeDarkLabel: "Dark Mode",
+                heroBadge: "Interactive Web App based on Abouawd Studio & Dr. Emad Rashad Othman's Book",
+                heroTitlePart1: "How to Break Free from",
+                heroTitleHighlight: "The Prison of Perfectionism?",
+                heroSubtitle: "Perfectionism is not a quest for excellence—it is a defensive shield forged by old fears to protect you from criticism and rejection, which gradually turns into a suffocating prison. Explore the core insights of 'The Executioner Under My Skin' through interactive tools.",
+                voiceWhenError: "When You Err [00:00:08]",
+                voiceWhenErrorQuote: "“Why did you do that? You must never make a mistake!”",
+                voiceWhenSuccess: "When You Succeed [00:00:12]",
+                voiceWhenSuccessQuote: "“It could have been better than this!”",
+                voiceWhenRest: "When You Rest [00:00:16]",
+                voiceWhenRestQuote: "“You are lazy... how dare you waste time resting?”",
+                ctaStartQuiz: "Take the Inner Executioner Quiz",
+                ctaReframer: "Inner Voice Reframer",
+                ctaWatchVideo: "Watch Original Video",
+                videoCardHeader: "Visual Simulator: The Shield That Became a Prison",
+                btnPrisonLabel: "Perfectionist Shield (Prison)",
+                btnFreedomLabel: "Self-Compassion (Freedom)",
+                heroBookQuote: "“Humans become great not because they never make mistakes, but because they err and learn, fall and rise again—without an inner executioner whipping them at every step.”",
+                heroBookAuthor: "— Core takeaway of 'The Executioner Under My Skin' by Dr. Emad Rashad Othman [00:07:03]",
+                metaphorPrisonBadge: "Prison State (Defensive Perfectionism)",
+                metaphorPrisonTitle: "“I must be flawless so no one rejects or criticizes me”",
+                metaphorPrisonDesc: "Perfectionism begins as a shield to protect you from fear [00:02:28], but you soon become trapped inside that heavy armor: terrified of mistakes, afraid of success, and paralyzed into procrastination.",
+                metaphorFreedomBadge: "Recovery State (Self-Compassion)",
+                metaphorFreedomTitle: "“I am human; I grow through trial and error without self-flagellation”",
+                metaphorFreedomDesc: "When you take off the heavy armor of perfectionism and understand your root fear [00:06:27], mistakes transform from punishable crimes into natural stepping stones for growth.",
+                sec1Tag: "Section 1 • Complete Knowledge Map",
+                sec1Title: "The 5 Core Pillars of 'The Executioner Under My Skin'",
+                sec1Desc: "Click any timestamped chapter below to explore the psychological analysis, real-life stories from the video, and practical takeaways.",
+                sec2Tag: "Section 2 • Interactive Diagnostic Tool",
+                sec2Title: "The Inner Executioner Scale",
+                sec2Desc: "Respond honestly to these 6 scenarios drawn directly from the book to measure how strongly defensive perfectionism and polarized thinking govern your peace of mind.",
+                btnResetQuiz: "Reset Assessment",
+                quizInitTitle: "Answer the 6 Questions to Begin",
+                quizInitDesc: "Select how strongly you relate to each statement to unlock your personalized psychological profile and book recommendation.",
+                sec3Tag: "Section 3 • Self-Compassion Practice [00:06:51]",
+                sec3Title: "Inner Voice Reframer: From Executioner to Compassion",
+                sec3Desc: "Select a common trigger where your Inner Executioner attacks you—or write your own thought—to see the hidden fear behind it and transform it into compassionate self-talk.",
+                cardCriticBadge: "1. The Executioner's Voice",
+                cardTrapBadge: "2. Root Fear & Cognitive Trap",
+                cardTrapTitle: "What is hiding behind this harsh voice?",
+                cardHealBadge: "3. Compassionate Self-Voice",
+                cardHealTitle: "Balanced & Self-Compassionate Response",
+                btnCopyVoice: "Copy Phrase",
+                customReframeTitle: "Type a harsh thought your Inner Executioner tells you:",
+                customReframeSub: "Our reframer will deconstruct the 'All-or-Nothing' trap and craft a compassionate response based on the book.",
+                customInputPlaceholder: "e.g., If I don't finish this project 100% perfectly today, I'm a failure...",
+                btnTransformThought: "Transform into Compassion",
+                sec4Tag: "Section 4 • Breaking Polarized Thinking (All-or-Nothing) [00:04:58]",
+                sec4Title: "All-or-Nothing Paralysis & Procrastination Breaker",
+                sec4Desc: "The video explains that procrastination isn't laziness—it's driven by 'Polarized Thinking': either I do it 100% flawlessly, or I don't start at all [00:05:31]. Use this tool to shrink a delayed task into a safe '10% Imperfect Human Step'.",
+                presetLabel: "Choose a common delayed task or write your own:",
+                labelDelayedTask: "1. Task you are delaying out of fear of imperfection:",
+                labelAllOrNothing: "The Paralyzing 100% Illusion (Executioner's Rule):",
+                labelImperfectStep: "The Safe 10% Step Allowed to Be Imperfect:",
+                btnCommitStep: "Commit to 10% Imperfect Step & Start 5-Min Timer",
+                timerBadge: "Safe Start Timer (5 Minutes)",
+                timerDefaultMsg: "The goal is NOT perfection—the goal is simply breaking fear for 5 minutes!",
+                btnStartTimer: "Start 5 Imperfect Minutes",
+                btnPauseTimer: "Pause Timer",
+                logTitle: "Your Imperfect & Liberated Action Log",
+                footerBookTitle: "Book: 'The Executioner Under My Skin' — Dr. Emad Rashad Othman",
+                footerVideoSource: "Based on the episode 'How to Break Free from the Prison of Perfectionism?' by Abouawd Studio",
+                toastCopied: "Compassionate response copied to clipboard!",
+                toastStepSaved: "Imperfect step logged and 5-minute timer ready!",
+                toastCustomReframed: "Thought deconstructed into self-compassion!"
+            }
+        };
+
+        // ==========================================
+        // 3. CHAPTERS DATA (SECTION 1 - TIMELINE)
+        // ==========================================
+        const chaptersData = [
+            {
+                id: "ch1",
+                timestamp: "00:00:00",
+                ytSeconds: 0,
+                icon: "fa-gavel",
+                color: "rose",
+                ar: {
+                    tabTitle: "1. صوت الجلاد الداخلي",
+                    fullTitle: "من هو «الجلاد تحت جلدي»؟ وكيف يسرق فرحتك؟",
+                    summary: "يفتتح الفيديو بتسليط الضوء على ذلك الصوت الداخلي القاسي الذي لا يهدأ أبدًا: يجلدك حين تخطئ، يقلل من قيمتك حين تنجح، ويتهمك بالكسل حين ترتاح. هذا الصوت هو ما يسميه الدكتور عماد رشاد عثمان بـ «الجلاد النفسي».",
+                    keyPoints: [
+                        "عند الخطأ: «لماذا فعلت هذا؟ لا يجب أن تغلط أبدًا!» [00:00:08]",
+                        "عند النجاح: «كان من الممكن أن يكون أفضل.. هذا ليس كافيًا» [00:00:12]",
+                        "عند الراحة: «أنت إنسان كسول.. لماذا لا تعمل الآن؟» [00:00:16]"
+                    ],
+                    contrastWrong: "الاعتقاد الشائع: هذا الصوت يحفزني لأكون شخصًا ناجحًا ومتميزًا.",
+                    contrastRight: "حقيقة الكتاب: هذا الصوت لا يصنع النجاح، بل يستنزف طاقتك النفسية ويحرمك من الاستمتاع بأي إنجاز.",
+                    reflectionQ: "سؤال للتأمل: متى كانت آخر مرة أنجزت فيها عملًا جيدًا، لكن صوتك الداخلي منعك من الفرح به؟"
+                },
+                en: {
+                    tabTitle: "1. The Inner Executioner",
+                    fullTitle: "Who is 'The Executioner Under My Skin' & How Does It Steal Your Joy?",
+                    summary: "The episode opens by exposing the relentless inner voice that never rests: it whips you when you make a mistake, belittles your success when you achieve, and accuses you of laziness when you rest. Dr. Emad Rashad Othman calls this internal critic 'The Psychological Executioner'.",
+                    keyPoints: [
+                        "When you err: 'Why did you do that? You must never make a mistake!' [00:00:08]",
+                        "When you succeed: 'It could have been better... this isn't enough.' [00:00:12]",
+                        "When you rest: 'You are lazy... why aren't you being productive?' [00:00:16]"
+                    ],
+                    contrastWrong: "Common Myth: This harsh voice motivates me to achieve excellence.",
+                    contrastRight: "Book Reality: This voice doesn't create healthy excellence; it drains your mental energy and robs you of joy.",
+                    reflectionQ: "Reflection Question: When was the last time you accomplished something good, yet your inner critic refused to let you celebrate?"
+                }
+            },
+            {
+                id: "ch2",
+                timestamp: "00:00:59",
+                ytSeconds: 59,
+                icon: "fa-shield-halved",
+                color: "amber",
+                ar: {
+                    tabTitle: "2. قصة الطفل والدرع المزيف",
+                    fullTitle: "قصة الطفل الصائم: كيف يتحول الدرع إلى سجن؟",
+                    summary: "يروي الكتاب قصة طفل صغير في رمضان [00:00:59] كان يرتجف خوفًا من أن يبلع ريقه فيفسد صومه ويدخل النار. في الظاهر يبدو الطفل حريصًا على العبادة، لكن الدافع الحقيقي لم يكن الحب بل «الخوف الشديد» [00:01:54]. هكذا تنشأ المثالية: درعٌ نحتمي به من الخوف، ثم يتحول الدرع نفسه إلى سجن [00:02:28].",
+                    keyPoints: [
+                        "الكمالية ليست حبًا في التميز، بل هي هروب من الخوف من الفشل أو العقاب [00:01:54].",
+                        "يبني الإنسان هوية مزيفة عنوانها: «أنا شخص لا يخطئ أبدًا» لكي يشعر بالأمان [00:02:15].",
+                        "بمرور الوقت، يصبح الحفاظ على هذا الدرع عبئًا ثقيلًا يسجن صاحبه بالداخل [00:02:28]."
+                    ],
+                    contrastWrong: "الدرع المؤقت: «سأكون مثاليًا في كل تفصيلة حتى أحمي نفسي من الألم والنقد».",
+                    contrastRight: "السجن الدائم: «لم أعد قادرًا على التحرك بحرية لأن أي غلطة صغيرة تهدد هويتي بالكامل».",
+                    reflectionQ: "سؤال للتأمل: ما هو الشيء الذي تبالغ في تدقيقه ومراجعته اليوم خوفًا من العواقب وليس حبًا في العمل نفسه؟"
+                },
+                en: {
+                    tabTitle: "2. The Boy & The Shield",
+                    fullTitle: "The Fasting Boy's Story: How a Protective Shield Turns Into a Prison",
+                    summary: "The book shares the story of a young boy during Ramadan [00:00:59] who was terrified that swallowing his saliva would break his fast and send him to Hell. On the surface, it looked like devotion, but the true driver was sheer terror [00:01:54]. Perfectionism is born the exact same way: a shield built out of fear that eventually becomes a prison [00:02:28].",
+                    keyPoints: [
+                        "Perfectionism is not a love for excellence; it is an escape from fear of punishment or rejection [00:01:54].",
+                        "You construct a rigid identity: 'I must be flawless' just to feel safe [00:02:15].",
+                        "Gradually, carrying that armor becomes a suffocating prison you cannot step out of [00:02:28]."
+                    ],
+                    contrastWrong: "The Initial Shield: 'I will be flawless in every detail so nobody can hurt or criticize me.'",
+                    contrastRight: "The Resulting Prison: 'I can no longer move freely because the smallest mistake threatens my entire identity.'",
+                    reflectionQ: "Reflection Question: What area of your life are you over-checking right now out of fear rather than genuine passion?"
+                }
+            },
+            {
+                id: "ch3",
+                timestamp: "00:03:09",
+                ytSeconds: 189,
+                icon: "fa-child-reaching",
+                color: "purple",
+                ar: {
+                    tabTitle: "3. جذور الطفولة والخوف من النجاح",
+                    fullTitle: "الحب المشروط في الطفولة ومفارقة «الخوف من النجاح»",
+                    summary: "تعود جذور الكمالية إلى الطفولة [00:03:09]؛ حين يتربى الطفل في بيئة تربط الحب والقبول بالإنجاز والدرجات النهائية، مع مقارنات مستمرة («انظر إلى ابن عمك أو زميلك»). والنتيجة المفاجئة التي يكشفها الكتاب هي أن الكمالي لا يخاف من الفشل فقط، بل يخاف من النجاح أيضًا [00:04:19]!",
+                    keyPoints: [
+                        "الحب المشروط: «إذا لم أكن الأول والمثالي، فلن يحبني أو يقبلني أحد» [00:03:20].",
+                        "المقارنات المستمرة وتشجيع المجتمع لمظهر «الشخص الذي لا يغلط» [00:03:45].",
+                        "مفارقة الخوف من النجاح [00:04:19]: النجاح يعني ارتفاع سقف توقعات الناس، وبالتالي ضغط أكبر في المرة القادمة!"
+                    ],
+                    contrastWrong: "رسالة الطفولة المشوهة: قيمتك كإنسان تساوي مجموع إنجازاتك ودرجاتك فقط.",
+                    contrastRight: "الحقيقة النفسية: قيمتك الإنسانية ثابتة وأصيلة حتى في أوقات ضعفك وإخفاقك.",
+                    reflectionQ: "سؤال للتأمل: هل سبق أن شعرت بالقلق بعد تحقيق نجاح كبير لأنك تساءلت: «كيف سأحافظ على هذا المستوى أمام الناس؟»"
+                },
+                en: {
+                    tabTitle: "3. Childhood & Fear of Success",
+                    fullTitle: "Conditional Love in Childhood & The Paradox of 'Fear of Success'",
+                    summary: "Perfectionism takes root in childhood [00:03:09] when love and approval are tied strictly to achievements and top grades, reinforced by constant comparisons ('Look at your cousin/classmate'). Shockingly, this leads not only to fear of failure, but also to a deep 'Fear of Success' [00:04:19]!",
+                    keyPoints: [
+                        "Conditional Love: 'If I am not #1 and flawless, I am unworthy of love' [00:03:20].",
+                        "Relentless comparisons and societal praise for the 'person who never errs' [00:03:45].",
+                        "Fear of Success Paradox [00:04:19]: Succeeding raises everyone's expectations, creating terrifying pressure for next time!"
+                    ],
+                    contrastWrong: "Distorted Childhood Rule: Your worth as a human being equals your grades and achievements.",
+                    contrastRight: "Psychological Truth: Your human worth is inherent and unconditional, even when you stumble.",
+                    reflectionQ: "Reflection Question: Have you ever felt anxious right after a big win because you worried: 'How will I ever top this next time?'"
+                }
+            },
+            {
+                id: "ch4",
+                timestamp: "00:04:44",
+                ytSeconds: 284,
+                icon: "fa-circle-half-stroke",
+                color: "blue",
+                ar: {
+                    tabTitle: "4. التسويف ومتلازمة المحتال",
+                    fullTitle: "التفكير القطبي (الأبيض والأسود)، الشلل النفسي، ومتلازمة المحتال",
+                    summary: "يفسر الكتاب لماذا يعاني الشخص الكمالي من التسويف المزمن [00:04:44]؛ فالسبب ليس الكسل، بل «التفكير القطبي» (إما أبيض أو أسود) [00:04:58]: إما أن يخرج العمل مثاليًا 100% أو فهو فشل تام. هذا التفكير يولد شللًا نفسيًا [00:05:31]، كما يولد «متلازمة المحتال» [00:06:04].",
+                    keyPoints: [
+                        "التفكير القطبي [00:04:58]: لا توجد منطقة وسطى؛ أي نقص بسيط يعني أن العمل كله بلا قيمة.",
+                        "الشلل النفسي والتسويف [00:05:31]: تأجيل البدء في المشاريع لأن شروط الكمال غير متوفرة.",
+                        "متلازمة المحتال (Impostor Syndrome) [00:06:04]: شعور دائم بأنك تخدع الناس وأنهم سيكتشفون قريبًا أنك لست كفؤًا كما يظنون."
+                    ],
+                    contrastWrong: "منطق التفكير القطبي: 95% تساوي صفرًا.. إما الكمال المطلق أو الانسحاب.",
+                    contrastRight: "منطق النضج النفسي: الإنجاز البشري التراكمي يبدأ بخطوات ناقصة تتحسن بالممارسة.",
+                    reflectionQ: "سؤال للتأمل: كم مشروعًا أو فكرة رائعة قبرتها في مهدها لأنك انتظرت «الوقت المثالي والظروف المثالية»؟"
+                },
+                en: {
+                    tabTitle: "4. Procrastination & Impostor",
+                    fullTitle: "Polarized Thinking (All-or-Nothing), Paralysis & Impostor Syndrome",
+                    summary: "Why do perfectionists procrastinate so heavily [00:04:44]? It isn't laziness—it's 'Polarized Thinking' (Black-or-White) [00:04:58]: either the work is 100% flawless, or it is worthless trash. This mindset causes psychological paralysis [00:05:31] and fuels 'Impostor Syndrome' [00:06:04].",
+                    keyPoints: [
+                        "Polarized Thinking [00:04:58]: No middle ground exists; a minor flaw ruins the entire effort.",
+                        "Psychological Paralysis [00:05:31]: Delaying action endlessly because ideal conditions aren't met.",
+                        "Impostor Syndrome [00:06:04]: Living in dread that others will 'expose' you as a fraud who isn't truly competent."
+                    ],
+                    contrastWrong: "Polarized Logic: 95% equals zero. Either absolute perfection or total avoidance.",
+                    contrastRight: "Healthy Logic: Real human progress is built through imperfect iterations that improve over time.",
+                    reflectionQ: "Reflection Question: How many great ideas have you abandoned simply because you waited for the '100% perfect moment'?"
+                }
+            },
+            {
+                id: "ch5",
+                timestamp: "00:06:27",
+                ytSeconds: 387,
+                icon: "fa-heart-circle-check",
+                color: "emerald",
+                ar: {
+                    tabTitle: "5. طريق التعافي والرحمة",
+                    fullTitle: "كيف تتعافى؟ فهم الخوف وممارسة «الرحمة مع النفس»",
+                    summary: "يختتم الفيديو والكتاب بخطوتين جوهريتين للتعافي [00:06:27]: أولًا، التوقف عن محاربة المثالية سطحيًا والغوص لفهم «الخوف الكامن» وراءها. ثانيًا، استبدال صوت الجلاد بـ «الرحمة مع النفس» (Self-Compassion) [00:06:51] وقبول بشريتك التي تتعلم بالخطأ.",
+                    keyPoints: [
+                        "الخطوة الأولى [00:06:27]: واجه الخوف الأصلي (الخوف من الرفض أو عدم الكفاية) بدل الاكتفاء بقول «لا أريد أن أكون مثاليًا».",
+                        "الخطوة الثانية [00:06:51]: الرحمة مع النفس؛ أن تعامل نفسك عند الخطأ كما تعامل صديقًا عزيزًا يمرّ بتجربة صعبة.",
+                        "القاعدة الذهبية [00:07:03]: العظمة الحقيقية هي أن تخطئ وتتعلم، وتقع وتقوم، دون جلاد يمزقك مع كل عثرة."
+                    ],
+                    contrastWrong: "وهم القسوة: «إذا سامحت نفسي على الخطأ فسأصبح شخصًا متسيبًا وفاشلًا».",
+                    contrastRight: "حقيقة الرحمة: الرحمة مع النفس تمنحك الأمان النفسي اللازم للنهوض السريع والمحاولة من جديد.",
+                    reflectionQ: "سؤال للتأمل: لو أخطأ صديقك المقرب نفس الخطأ الذي تلوم نفسك عليه اليوم، ماذا كنت ستقول له؟ قل ذلك لنفسك الآن."
+                },
+                en: {
+                    tabTitle: "5. Recovery & Self-Compassion",
+                    fullTitle: "The Path to Recovery: Confronting Root Fear & Practicing Self-Compassion",
+                    summary: "The video concludes with the two essential steps to healing [00:06:27]: First, stop fighting perfectionism on the surface and instead understand the root fear hiding underneath it. Second, replace the Inner Executioner with 'Self-Compassion' [00:06:51] and embrace your humanity.",
+                    keyPoints: [
+                        "Step 1 [00:06:27]: Confront and heal the underlying fear (fear of rejection or inadequacy) rather than forcing yourself to 'stop being perfectionist'.",
+                        "Step 2 [00:06:51]: Self-Compassion—treating yourself after a mistake with the same warmth you would offer a dear friend.",
+                        "The Golden Rule [00:07:03]: Greatness comes from erring, learning, falling, and rising again without an inner executioner."
+                    ],
+                    contrastWrong: "Fear of Compassion: 'If I am kind to myself when I fail, I will become lazy and careless.'",
+                    contrastRight: "Truth of Compassion: Self-compassion provides the emotional safety needed to get back up and try again.",
+                    reflectionQ: "Reflection Question: If your best friend made the exact mistake you are beating yourself up over today, what would you say to them?"
+                }
+            }
+        ];
+
+        // ==========================================
+        // 4. QUIZ DATA (SECTION 2 - 6 QUESTIONS)
+        // ==========================================
+        const quizQuestions = [
+            {
+                id: 0,
+                timestamp: "00:00:08",
+                ar: {
+                    pillar: "1. جلد الذات عند الهفوات",
+                    question: "عندما أرتكب خطأً بسيطًا في العمل أو الدراسة أو الحديث، يظل صوت داخلي يلومني لساعات أو أيام قائلًا: «كيف فعلت هذا الغباء؟».",
+                    options: ["نادرًا جدًا (0)", "أحيانًا (1)", "غالبًا (2)", "دائمًا وبشدة (3)"]
+                },
+                en: {
+                    pillar: "1. Self-Flagellation Over Minor Mistakes",
+                    question: "When I make a minor mistake at work, school, or in conversation, an inner voice replays it for hours or days saying: 'How could you do that?'",
+                    options: ["Rarely (0)", "Sometimes (1)", "Often (2)", "Almost Always (3)"]
+                }
+            },
+            {
+                id: 1,
+                timestamp: "00:03:20",
+                ar: {
+                    pillar: "2. القيمة المشروطة بالإنجاز",
+                    question: "أشعر في أعماقي أن قيمتي ومكانتي لدى الآخرين مرتبطة بكوني متفوقًا ومثاليًا؛ وإذا أخفقت فلن يتقبلني أو يحبني أحد.",
+                    options: ["نادرًا جدًا (0)", "أحيانًا (1)", "غالبًا (2)", "دائمًا وبشدة (3)"]
+                },
+                en: {
+                    pillar: "2. Self-Worth Tied to Achievement",
+                    question: "Deep down, I feel my worth and acceptance by others depend on being flawless and high-achieving; if I fail, people won't value me.",
+                    options: ["Rarely (0)", "Sometimes (1)", "Often (2)", "Almost Always (3)"]
+                }
+            },
+            {
+                id: 2,
+                timestamp: "00:04:58",
+                ar: {
+                    pillar: "3. التفكير القطبي والتسويف",
+                    question: "أؤجل البدء في مهام أو مشاريع مهمة لأنني أقول لنفسي: «إما أن أنفذها بطريقة مثالية 100% أو لا داعي للبدء أصلًا».",
+                    options: ["نادرًا جدًا (0)", "أحيانًا (1)", "غالبًا (2)", "دائمًا وبشدة (3)"]
+                },
+                en: {
+                    pillar: "3. All-or-Nothing Procrastination",
+                    question: "I delay starting important tasks because I tell myself: 'Either I do this 100% flawlessly under ideal conditions, or there is no point starting.'",
+                    options: ["Rarely (0)", "Sometimes (1)", "Often (2)", "Almost Always (3)"]
+                }
+            },
+            {
+                id: 3,
+                timestamp: "00:04:19",
+                ar: {
+                    pillar: "4. الخوف من النجاح وتبعاته",
+                    question: "حتى عندما أنجح، أشعر بالقلق والتوتر بدل الفرح، لأنني أخاف من ارتفاع توقعات الناس مني في المرة القادمة.",
+                    options: ["نادرًا جدًا (0)", "أحيانًا (1)", "غالبًا (2)", "دائمًا وبشدة (3)"]
+                },
+                en: {
+                    pillar: "4. Fear of Success & Higher Expectations",
+                    question: "Even when I succeed, I feel anxious rather than joyful because I dread the higher expectations people will place on me next time.",
+                    options: ["Rarely (0)", "Sometimes (1)", "Often (2)", "Almost Always (3)"]
+                }
+            },
+            {
+                id: 4,
+                timestamp: "00:06:04",
+                ar: {
+                    pillar: "5. متلازمة المحتال (Impostor Syndrome)",
+                    question: "أشعر أحيانًا أن نجاحاتي مجرد صدفة وأنني أقل كفاءة مما يظن الناس، وأخشى أن «ينكشف أمري» يومًا ما.",
+                    options: ["نادرًا جدًا (0)", "أحيانًا (1)", "غالبًا (2)", "دائمًا وبشدة (3)"]
+                },
+                en: {
+                    pillar: "5. Impostor Syndrome",
+                    question: "I often feel my achievements are just luck, that I'm not as competent as people think, and I fear being 'exposed' one day.",
+                    options: ["Rarely (0)", "Sometimes (1)", "Often (2)", "Almost Always (3)"]
+                }
+            },
+            {
+                id: 5,
+                timestamp: "00:00:16",
+                ar: {
+                    pillar: "6. ذنب الراحة والاسترخاء",
+                    question: "عندما آخذ قسطًا من الراحة أو الإجازة، يهاجمني شعور بالذنب وصوت داخلي يقول لي: «أنت كسول وتضيع وقتك».",
+                    options: ["نادرًا جدًا (0)", "أحيانًا (1)", "غالبًا (2)", "دائمًا وبشدة (3)"]
+                },
+                en: {
+                    pillar: "6. Guilt When Resting",
+                    question: "Whenever I take time to rest or relax, I am attacked by guilt and an inner voice calling me 'lazy and unproductive.'",
+                    options: ["Rarely (0)", "Sometimes (1)", "Often (2)", "Almost Always (3)"]
+                }
+            }
+        ];
+
+        // ==========================================
+        // 5. VOICE REFRAMER SCENARIOS (SECTION 3)
+        // ==========================================
+        const scenariosData = [
+            {
+                id: "sc1",
+                icon: "fa-circle-exclamation",
+                ar: {
+                    btnLabel: "ارتكبت خطأً في العمل أو الدراسة",
+                    criticTitle: "هجوم الجلاد بعد الخطأ",
+                    criticQuote: "«كيف فاتتك هذه النقطة؟ أنت لا تصلح لشيء، الجميع الآن يراك شخصًا فاشلًا ومهملًا!»",
+                    criticEffect: "الأثر: شلل نفسي، خجل مفرط، ورغبة في الانسحاب.",
+                    trapAnalysis: "الجلاد هنا يستخدم «التفكير القطبي» فيربط بين خطأ جزئي في مهمة وبين قيمتك الكلية كإنسان، بدافع الخوف الطفولي من الرفض.",
+                    trapType: "الفخ: التعميم المفرط + التفكير القطبي (الأبيض أو الأسود)",
+                    healQuote: "«من الطبيعي أن أخطئ لأنني إنسان يتعلم وليس آلة. هذا الخطأ يعلمني زاوية جديدة لتحسين عملي، ولا ينقص من قيمتي الإنسانية شيئًا.»",
+                    actionStep: "خطوة عملية: صحح الخطأ بهدوء دون اعتذار مبالغ فيه يجلد ذاتك."
+                },
+                en: {
+                    btnLabel: "Made a Mistake at Work/Study",
+                    criticTitle: "The Executioner's Attack After an Error",
+                    criticQuote: "“How could you miss that detail? You are incompetent, and now everyone sees you as a careless failure!”",
+                    criticEffect: "Effect: Shame, emotional paralysis, and urge to hide.",
+                    trapAnalysis: "Your inner critic is using Polarized Thinking—equating a single human error in a task with your entire worth as a person, driven by an old fear of rejection.",
+                    trapType: "Trap: Overgeneralization + All-or-Nothing Thinking",
+                    healQuote: "“Making mistakes is proof that I am a human learning and trying, not a machine. This error shows me what to refine next without diminishing my worth.”",
+                    actionStep: "Action Step: Fix the error calmly without excessive self-abasing apologies."
+                }
+            },
+            {
+                id: "sc2",
+                icon: "fa-trophy",
+                ar: {
+                    btnLabel: "حققت نجاحًا أو إنجازًا",
+                    criticTitle: "تسميم فرحة النجاح",
+                    criticQuote: "«لا تفرح كثيرًا! كان يمكن أن يكون أفضل من ذلك، ثم ماذا لو لم تستطع تكرار هذا النجاح في المرة القادمة؟»",
+                    criticEffect: "الأثر: الخوف من النجاح [00:04:19] ومتلازمة المحتال [00:06:04].",
+                    trapAnalysis: "يخاف الجلاد من النجاح لأنه يرفع سقف التوقعات؛ فيحاول تبخيس إنجازك مسبقًا ليحميك من صدمة أي إخفاق مستقبلي.",
+                    trapType: "الفخ: تبخيس الإنجاز + الخوف من النجاح",
+                    healQuote: "«لقد بذلت جهدًا صادقًا وأستحق أن أحتفل بهذه الخطوة اليوم. لست مطالبًا بأن أكون خارقًا في المستقبل، بل أن أستمر بالنمو الطبيعي.»",
+                    actionStep: "خطوة عملية: اكتب 3 أشياء أحسنت صنعها في هذا الإنجاز واحتفل بها."
+                },
+                en: {
+                    btnLabel: "Achieved a Major Success",
+                    criticTitle: "Poisoning the Joy of Achievement",
+                    criticQuote: "“Don't celebrate yet! It could have been done better—and what if you fail to meet everyone's high expectations next time?”",
+                    criticEffect: "Effect: Fear of Success [00:04:19] & Impostor Syndrome [00:06:04].",
+                    trapAnalysis: "The Executioner fears success because higher expectations feel dangerous; it discounts your win prematurely to brace for future disappointment.",
+                    trapType: "Trap: Discounting the Positive + Fear of Success",
+                    healQuote: "“I put in honest effort and deserve to celebrate this milestone today. I don't need to be superhuman next time—just keep growing naturally.”",
+                    actionStep: "Action Step: Write down 3 things you did well in this achievement and honor them."
+                }
+            },
+            {
+                id: "sc3",
+                icon: "fa-mug-hot",
+                ar: {
+                    btnLabel: "أخذت قسطًا من الراحة",
+                    criticTitle: "جلد الذات أثناء الاسترخاء",
+                    criticQuote: "«أنت جالس ترتاح والناس يتقدمون عليك! أنت شخص كسول وتضيع عمرك بلا فائدة!»",
+                    criticEffect: "الأثر: احتراق نفسي (Burnout) وعجز عن الاستجمام.",
+                    trapAnalysis: "ينبع هذا الصوت من ربط القيمة الذاتية بالإنتاجية المستمرة فقط (الحب المشروط في الطفولة [00:03:09])، وكأن الراحة جريمة.",
+                    trapType: "الفخ: ربط القيمة بالإنتاجية فقط",
+                    healQuote: "«الراحة ليست كسلًا، بل هي حقٌ إنساني ووقودٌ ضروري لقلبي وعقلي. أنا ذو قيمة حتى في اللحظات التي لا أنتج فيها شيئًا.»",
+                    actionStep: "خطوة عملية: استمتع بـ 30 دقيقة من الراحة التامة بقرارٍ واعٍ دون تبرير."
+                },
+                en: {
+                    btnLabel: "Took a Break to Rest",
+                    criticTitle: "Guilt-Tripping During Rest",
+                    criticQuote: "“You're sitting here resting while everyone else is getting ahead! You are lazy and wasting your life!”",
+                    criticEffect: "Effect: Chronic burnout and inability to recharge.",
+                    trapAnalysis: "This voice stems from tying your human right to exist strictly to non-stop productivity (Childhood Conditional Worth [00:03:09]).",
+                    trapType: "Trap: Conditional Self-Worth on Productivity",
+                    healQuote: "“Rest is not laziness; it is a biological and emotional necessity. My worth as a human persists even when I am resting.”",
+                    actionStep: "Action Step: Enjoy 30 minutes of intentional rest without apologizing to yourself."
+                }
+            },
+            {
+                id: "sc4",
+                icon: "fa-hourglass-half",
+                ar: {
+                    btnLabel: "أؤجل البدء في مشروع جديد",
+                    criticTitle: "شلل البداية المثالية",
+                    criticQuote: "«لا تبدأ الآن! خطتك ليست كاملة 100%، وإذا بدأت بهذا المستوى فستفشل وتضحك الناس عليك!»",
+                    criticEffect: "الأثر: تسويف كمالي مزمن وشلل عن المبادرة [00:05:31].",
+                    trapAnalysis: "كما يوضح الكتاب، التسويف هنا ليس كسلًا بل هو درعٌ يحميك من مواجهة احتمالية النقد أو النقص عبر عدم البدء أصلًا.",
+                    trapType: "الفخ: الشلل الكمالي + اشتراط الـ 100%",
+                    healQuote: "«البداية الناقصة خيرٌ من الكمال المؤجل. أسمح لنفسي أن أبدأ بمسودة أولية بسيطة بنسبة 10% وأطورها خطوة بخطوة.»",
+                    actionStep: "خطوة عملية: انتقل إلى أداة الـ 5 دقائق بالأسفل وابدأ بأصغر جزء ممكن."
+                },
+                en: {
+                    btnLabel: "Afraid to Start a New Project",
+                    criticTitle: "The Perfect-Start Paralysis",
+                    criticQuote: "“Don't start yet! Your plan isn't 100% ready, and if you launch something imperfect, you'll embarrass yourself!”",
+                    criticEffect: "Effect: Perfectionist Procrastination & Paralysis [00:05:31].",
+                    trapAnalysis: "As the book explains, procrastination here is a defense mechanism protecting your ego from potential criticism by avoiding the arena altogether.",
+                    trapType: "Trap: Perfectionist Paralysis + 100% Requirement",
+                    healQuote: "“An imperfect start beats paralyzed perfection. I give myself permission to create a rough 10% first draft and improve as I go.”",
+                    actionStep: "Action Step: Jump to the 5-Minute Breaker below and do the smallest possible step."
+                }
+            }
+        ];
+
+        // ==========================================
+        // 6. PRESET TASKS FOR PARALYSIS BREAKER (SECTION 4)
+        // ==========================================
+        const presetTasks = [
+            {
+                ar: {
+                    label: "كتابة مقال أو تقرير أو بحث",
+                    task: "كتابة التقرير أو المقال المؤجل منذ أسبوع",
+                    illusion: "يجب أن أكتب مقدمة عبقرية وأن يكون النص خاليًا من أي خطأ من المحاولة الأولى وأن أنهيه كاملًا في جلسة واحدة.",
+                    step10: "سأفتح ملفًا فارغًا وأكتب 3عناوين فرعية أو مسودة أولية عشوائية لمدة 5 دقائق فقط دون حذف أي كلمة."
+                },
+                en: {
+                    label: "Writing an Article / Report",
+                    task: "Writing the report or article delayed for a week",
+                    illusion: "I must write a brilliant opening and produce a flawless document on the very first try in one sitting.",
+                    step10: "I will open a blank document and jot down 3 rough bullet points for just 5 minutes without editing."
+                }
+            },
+            {
+                ar: {
+                    label: "تعلم مهارة أو لغة جديدة",
+                    task: "البدء في كورس البرمجة / اللغة الإنجليزية",
+                    illusion: "يجب أن أفرغ ساعتين يوميًا بلا انقطاع وأن أفهم كل قاعدة بنسبة 100% وإلا فلن أستفيد شيئًا.",
+                    step10: "سأشاهد أول 5 دقائق فقط من الدرس الأول وأدون فكرة واحدة بسيطة فقط."
+                },
+                en: {
+                    label: "Learning a New Skill / Language",
+                    task: "Starting the new coding or language course",
+                    illusion: "I must study 2 uninterrupted hours every single day and master 100% of every lesson or it's useless.",
+                    step10: "I will watch just the first 5 minutes of Lesson 1 and write down one single takeaway."
+                }
+            },
+            {
+                ar: {
+                    label: "ممارسة الرياضة واللياقة",
+                    task: "العودة لممارسة التمارين الرياضية",
+                    illusion: "إما أن ألتزم بنظام غذائي صارم وتمرين شاق لمدة ساعة كاملة يوميًا، أو لا فائدة من الحركة.",
+                    step10: "سأقوم بتمارين إطالة أو مشي خفيف في مكاني لمدة 5 دقائق الآن بملابسي العادية."
+                },
+                en: {
+                    label: "Starting Exercise / Fitness",
+                    task: "Getting back into working out",
+                    illusion: "Either I follow a strict diet and a grueling 60-minute daily workout, or there's no point moving at all.",
+                    step10: "I will do 5 minutes of light stretching or walking in place right now in my regular clothes."
+                }
+            }
+        ];
+
+        // ==========================================
+        // 7. CORE FUNCTIONS: THEME & LANGUAGE
+        // ==========================================
+        function applyTheme() {
+            const htmlEl = document.documentElement;
+            const themeIcon = document.getElementById('themeIcon');
+            const themeLabel = document.getElementById('themeLabel');
+            const dict = i18n[currentLang];
+
+            if (currentTheme === 'dark') {
+                htmlEl.classList.add('dark');
+                themeIcon.className = 'fa-solid fa-sun text-base text-amber-400';
+                themeLabel.textContent = dict.themeLightLabel;
+            } else {
+                htmlEl.classList.remove('dark');
+                themeIcon.className = 'fa-solid fa-moon text-base text-slate-700';
+                themeLabel.textContent = dict.themeDarkLabel;
+            }
+            localStorage.setItem('app_theme', currentTheme);
+        }
+
+        function toggleTheme() {
+            currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            applyTheme();
+        }
+
+        function applyLanguage() {
+            const htmlEl = document.documentElement;
+            htmlEl.lang = currentLang;
+            htmlEl.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+
+            const dict = i18n[currentLang];
+            document.title = dict.pageTitle;
+
+            // Update language toggle button label
+            document.getElementById('langToggleLabel').textContent = currentLang === 'ar' ? 'English' : 'العربية';
+            document.getElementById('navBrandTitle').textContent = dict.navBrandTitle;
+            document.getElementById('navBrandSub').textContent = dict.navBrandSub;
+
+            // Update all elements with data-i18n attribute
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (dict[key]) {
+                    el.textContent = dict[key];
+                }
+            });
+
+            // Update placeholders
+            document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+                const key = el.getAttribute('data-i18n-placeholder');
+                if (dict[key]) {
+                    el.placeholder = dict[key];
+                }
+            });
+
+            // Update Hero Metaphor Card
+            setHeroMetaphor(currentHeroMode);
+
+            // Re-render dynamic sections
+            renderChapterTabs();
+            renderActiveChapter();
+            renderQuizQuestions();
+            updateQuizScore();
+            renderScenarioButtons();
+            renderActiveScenario();
+            renderPresetTasks();
+            renderImperfectLog();
+            applyTheme();
+
+            localStorage.setItem('app_lang', currentLang);
+        }
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'ar' ? 'en' : 'ar';
+            applyLanguage();
+        }
+
+        // ==========================================
+        // 8. HERO METAPHOR SWITCHER (PRISON VS FREEDOM)
+        // ==========================================
+        function setHeroMetaphor(mode) {
+            currentHeroMode = mode;
+            const dict = i18n[currentLang];
+            const box = document.getElementById('metaphorVisualBox');
+            const iconWrap = document.getElementById('metaphorIconWrap');
+            const icon = document.getElementById('metaphorIcon');
+            const badge = document.getElementById('metaphorBadge');
+            const title = document.getElementById('metaphorTitle');
+            const desc = document.getElementById('metaphorDesc');
+            const btnPrison = document.getElementById('btnPrisonMode');
+            const btnFreedom = document.getElementById('btnFreedomMode');
+
+            if (mode === 'prison') {
+                box.className = "relative rounded-2xl p-6 bg-gradient-to-br from-rose-950/90 via-slate-900 to-slate-950 text-white border border-rose-500/40 text-center space-y-3 transition-all duration-500";
+                iconWrap.className = "w-16 h-16 mx-auto rounded-2xl bg-rose-500/20 border border-rose-500/40 flex items-center justify-center text-3xl text-rose-400 animate-float";
+                icon.className = "fa-solid fa-dungeon";
+                badge.className = "inline-block text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-rose-500/20 text-rose-300";
+                badge.textContent = dict.metaphorPrisonBadge;
+                title.textContent = dict.metaphorPrisonTitle;
+                desc.textContent = dict.metaphorPrisonDesc;
+
+                btnPrison.className = "py-2.5 px-3 rounded-xl font-bold text-xs sm:text-sm bg-rose-600 text-white shadow flex items-center justify-center gap-2 transition";
+                btnFreedom.className = "py-2.5 px-3 rounded-xl font-bold text-xs sm:text-sm text-slate-700 dark:text-slate-300 hover:bg-white/60 dark:hover:bg-slate-700 flex items-center justify-center gap-2 transition";
+            } else {
+                box.className = "relative rounded-2xl p-6 bg-gradient-to-br from-emerald-950/90 via-slate-900 to-slate-950 text-white border border-emerald-500/40 text-center space-y-3 transition-all duration-500";
+                iconWrap.className = "w-16 h-16 mx-auto rounded-2xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-3xl text-emerald-400 animate-float";
+                icon.className = "fa-solid fa-dove";
+                badge.className = "inline-block text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300";
+                badge.textContent = dict.metaphorFreedomBadge;
+                title.textContent = dict.metaphorFreedomTitle;
+                desc.textContent = dict.metaphorFreedomDesc;
+
+                btnFreedom.className = "py-2.5 px-3 rounded-xl font-bold text-xs sm:text-sm bg-emerald-600 text-white shadow flex items-center justify-center gap-2 transition";
+                btnPrison.className = "py-2.5 px-3 rounded-xl font-bold text-xs sm:text-sm text-slate-700 dark:text-slate-300 hover:bg-white/60 dark:hover:bg-slate-700 flex items-center justify-center gap-2 transition";
+            }
+        }
+
+        // ==========================================
+        // 9. SECTION 1: CONCEPT EXPLORER RENDERING
+        // ==========================================
+        function renderChapterTabs() {
+            const container = document.getElementById('chapterTabsContainer');
+            container.innerHTML = chaptersData.map((ch, idx) => {
+                const isActive = idx === activeChapterIndex;
+                const content = ch[currentLang];
+                return `
+                    <button onclick="selectChapter(${idx})" class="p-4 rounded-2xl border text-start transition-all flex flex-col justify-between gap-2 ${
+                        isActive
+                            ? 'bg-amber-500 text-slate-950 border-amber-500 shadow-lg shadow-amber-500/25 scale-[1.02]'
+                            : 'bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-800 hover:border-amber-500/50'
+                    }">
+                        <div class="flex items-center justify-between w-full">
+                            <span class="text-xs font-mono font-bold px-2 py-0.5 rounded ${
+                                isActive ? 'bg-slate-950/20 text-slate-950' : 'bg-amber-500/15 text-amber-600 dark:text-amber-400'
+                            }">[${ch.timestamp}]</span>
+                            <i class="fa-solid ${ch.icon} text-base ${isActive ? 'text-slate-950' : 'text-amber-500'}"></i>
+                        </div>
+                        <div class="font-extrabold text-xs sm:text-sm leading-snug mt-1">
+                            ${content.tabTitle}
+                        </div>
+                    </button>
+                `;
+            }).join('');
+        }
+
+        function selectChapter(index) {
+            activeChapterIndex = index;
+            renderChapterTabs();
+            renderActiveChapter();
+        }
+
+        function renderActiveChapter() {
+            const ch = chaptersData[activeChapterIndex];
+            const content = ch[currentLang];
+            const card = document.getElementById('activeChapterCard');
+            const watchAtLabel = currentLang === 'ar' ? `مشاهدة هذه الدقيقة في الفيديو [${ch.timestamp}]` : `Watch this timestamp on YouTube [${ch.timestamp}]`;
+            const keyInsightsTitle = currentLang === 'ar' ? 'النقاط المحورية في هذه المحطة:' : 'Key Insights in This Chapter:';
+
+            card.innerHTML = `
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                    <div class="lg:col-span-7 space-y-5">
+                        <div class="flex flex-wrap items-center gap-3">
+                            <span class="px-3.5 py-1 rounded-full bg-amber-500/15 text-amber-600 dark:text-amber-400 font-mono font-bold text-xs">
+                                <i class="fa-regular fa-clock me-1"></i> ${ch.timestamp}
+                            </span>
+                            <a href="https://youtu.be/Fnle_Fg8Png?t=${ch.ytSeconds}" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-rose-600 dark:text-rose-400 hover:underline flex items-center gap-1.5">
+                                <i class="fa-brands fa-youtube"></i>
+                                <span>${watchAtLabel}</span>
+                            </a>
+                        </div>
+
+                        <h3 class="text-xl sm:text-3xl font-black text-slate-900 dark:text-white leading-tight">
+                            ${content.fullTitle}
+                        </h3>
+
+                        <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+                            ${content.summary}
+                        </p>
+
+                        <div class="space-y-2.5 pt-1">
+                            <h4 class="text-xs sm:text-sm font-extrabold uppercase tracking-wider text-amber-600 dark:text-amber-400">
+                                ${keyInsightsTitle}
+                            </h4>
+                            <ul class="space-y-2">
+                                ${content.keyPoints.map(pt => `
+                                    <li class="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700 dark:text-slate-200 font-medium">
+                                        <i class="fa-solid fa-circle-check text-amber-500 mt-1 shrink-0"></i>
+                                        <span>${pt}</span>
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-5 space-y-4">
+                        <div class="p-5 rounded-2xl bg-rose-500/10 border border-rose-500/25 space-y-1.5">
+                            <div class="flex items-center gap-2 text-rose-600 dark:text-rose-400 font-extrabold text-xs">
+                                <i class="fa-solid fa-xmark-circle"></i>
+                                <span>${currentLang === 'ar' ? 'المنظور المغلوط (فخ المثالية)' : 'The Perfectionist Trap'}</span>
+                            </div>
+                            <p class="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-200 leading-relaxed">
+                                ${content.contrastWrong}
+                            </p>
+                        </div>
+
+                        <div class="p-5 rounded-2xl bg-emerald-500/10 border border-emerald-500/25 space-y-1.5">
+                            <div class="flex items-center gap-2 text-emerald-600 dark:text-emerald-400 font-extrabold text-xs">
+                                <i class="fa-solid fa-check-circle"></i>
+                                <span>${currentLang === 'ar' ? 'منظور التعافي (الجلاد تحت جلدي)' : 'The Recovery Perspective'}</span>
+                            </div>
+                            <p class="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-200 leading-relaxed">
+                                ${content.contrastRight}
+                            </p>
+                        </div>
+
+                        <div class="p-5 rounded-2xl bg-slate-100 dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700 space-y-2">
+                            <div class="flex items-center gap-2 text-amber-600 dark:text-amber-400 font-extrabold text-xs">
+                                <i class="fa-solid fa-lightbulb"></i>
+                                <span>${currentLang === 'ar' ? 'وقفة مصارحة مع النفس' : 'Personal Reflection Prompt'}</span>
+                            </div>
+                            <p class="text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-300 leading-relaxed">
+                                ${content.reflectionQ}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // ==========================================
+        // 10. SECTION 2: SELF-ASSESSMENT QUIZ LOGIC
+        // ==========================================
+        function renderQuizQuestions() {
+            const container = document.getElementById('quizQuestionsContainer');
+            container.innerHTML = quizQuestions.map((q, qIdx) => {
+                const content = q[currentLang];
+                const selectedVal = quizAnswers[qIdx];
+                return `
+                    <div class="p-5 sm:p-6 rounded-3xl bg-white dark:bg-slate-900 border ${
+                        selectedVal !== null ? 'border-amber-500/50' : 'border-slate-200 dark:border-slate-800'
+                    } shadow-sm space-y-4">
+                        <div class="flex items-center justify-between gap-2">
+                            <span class="text-xs font-extrabold text-amber-600 dark:text-amber-400">${content.pillar}</span>
+                            <span class="text-xs font-mono text-slate-400">[${q.timestamp}]</span>
+                        </div>
+                        <p class="text-sm sm:text-base font-bold text-slate-900 dark:text-white leading-relaxed">
+                            ${content.question}
+                        </p>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-1">
+                            ${content.options.map((optLabel, optVal) => {
+                                const isChosen = selectedVal === optVal;
+                                return `
+                                    <button onclick="answerQuiz(${qIdx}, ${optVal})" class="py-2.5 px-3 rounded-xl font-bold text-xs border transition ${
+                                        isChosen
+                                            ? 'bg-amber-500 text-slate-950 border-amber-500 shadow-md'
+                                            : 'bg-slate-50 dark:bg-slate-800/70 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:border-amber-500/50'
+                                    }">
+                                        ${optLabel}
+                                    </button>
+                                `;
+                            }).join('')}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function answerQuiz(qIdx, val) {
+            quizAnswers[qIdx] = val;
+            renderQuizQuestions();
+            updateQuizScore();
+        }
+
+        function updateQuizScore() {
+            const answered = quizAnswers.filter(v => v !== null).length;
+            const totalScore = quizAnswers.reduce((acc, v) => acc + (v || 0), 0);
+            const maxScore = 18; // 6 * 3
+            const percent = Math.round((totalScore / maxScore) * 100);
+
+            document.getElementById('quizScorePercent').textContent = `${percent}%`;
+            document.getElementById('quizAnsweredCount').textContent = currentLang === 'ar'
+                ? `تمت الإجابة: ${answered} من 6`
+                : `Answered: ${answered} / 6`;
+
+            // Update SVG circle stroke-dashoffset (circumference = 314.16)
+            const circle = document.getElementById('quizGaugeCircle');
+            const offset = 314.16 - (314.16 * percent) / 100;
+            circle.style.strokeDashoffset = offset;
+
+            const statusTitle = document.getElementById('quizStatusTitle');
+            const statusDesc = document.getElementById('quizStatusDesc');
+
+            if (answered === 0) {
+                statusTitle.textContent = i18n[currentLang].quizInitTitle;
+                statusDesc.textContent = i18n[currentLang].quizInitDesc;
+                circle.className = "text-amber-500 gauge-circle";
+                return;
+            }
+
+            if (percent <= 33) {
+                circle.className = "text-emerald-500 gauge-circle";
+                statusTitle.className = "text-base font-extrabold text-emerald-600 dark:text-emerald-400";
+                statusTitle.textContent = currentLang === 'ar'
+                    ? "توازن نفسي جيد وصوت رحيم بالذات"
+                    : "Healthy Balance & Self-Compassion";
+                statusDesc.textContent = currentLang === 'ar'
+                    ? "أنت تميز بشكل جيد بين السعي الصحي للتطور وبين جلد الذات. استمر في ممارسة الرحمة مع النفس كلما واجهت ضغوطًا جديدة."
+                    : "You distinguish well between healthy growth and self-flagellation. Keep practicing self-compassion during challenging seasons.";
+            } else if (percent <= 66) {
+                circle.className = "text-amber-500 gauge-circle";
+                statusTitle.className = "text-base font-extrabold text-amber-600 dark:text-amber-400";
+                statusTitle.textContent = currentLang === 'ar'
+                    ? "درع المثالية ينشط لديك وقت الضغوط"
+                    : "Moderate Inner Executioner Activity";
+                statusDesc.textContent = currentLang === 'ar'
+                    ? "يميل «الجلاد الداخلي» للظهور حين تخاف من التقييم أو تبدأ مشروعًا مهمًا. راجع قسم «محول الصوت الداخلي» لتفكيك التفكير القطبي."
+                    : "Your Inner Executioner flares up when you fear evaluation or start major tasks. Use the Voice Reframer below to disarm All-or-Nothing thinking.";
+            } else {
+                circle.className = "text-rose-500 gauge-circle";
+                statusTitle.className = "text-base font-extrabold text-rose-600 dark:text-rose-400";
+                statusTitle.textContent = currentLang === 'ar'
+                    ? "سطوة عالية للجلاد الداخلي (سجن المثالية)"
+                    : "High Inner Executioner Grip (Perfectionism Prison)";
+                statusDesc.textContent = currentLang === 'ar'
+                    ? "درع الكمالية يرهقك بشدة ويسبب لك التسويف أو الخوف من النجاح. تذكر خلاصة الكتاب [00:06:27]: الحل يبدأ بفهم خوفك القديم وممارسة الرحمة مع نفسك اليوم."
+                    : "Your perfectionist armor is exhausting you and fueling paralysis or anxiety. Remember [00:06:27]: recovery begins by meeting your underlying fear with self-compassion.";
+            }
+        }
+
+        function resetQuiz() {
+            quizAnswers = [null, null, null, null, null, null];
+            renderQuizQuestions();
+            updateQuizScore();
+        }
+
+        // ==========================================
+        // 11. SECTION 3: VOICE REFRAMER LOGIC
+        // ==========================================
+        function renderScenarioButtons() {
+            const container = document.getElementById('scenarioButtonsContainer');
+            container.innerHTML = scenariosData.map((sc, idx) => {
+                const isActive = idx === activeScenarioIndex;
+                const label = sc[currentLang].btnLabel;
+                return `
+                    <button onclick="selectScenario(${idx})" class="px-4 py-2.5 rounded-2xl font-bold text-xs sm:text-sm flex items-center gap-2 border transition ${
+                        isActive
+                            ? 'bg-emerald-500 text-slate-950 border-emerald-500 shadow-lg shadow-emerald-500/20'
+                            : 'bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-800 hover:border-emerald-500/50'
+                    }">
+                        <i class="fa-solid ${sc.icon}"></i>
+                        <span>${label}</span>
+                    </button>
+                `;
+            }).join('');
+        }
+
+        function selectScenario(idx) {
+            activeScenarioIndex = idx;
+            renderScenarioButtons();
+            renderActiveScenario();
+        }
+
+        function renderActiveScenario() {
+            const sc = scenariosData[activeScenarioIndex][currentLang];
+            document.getElementById('reframeCriticTitle').textContent = sc.criticTitle;
+            document.getElementById('reframeCriticQuote').textContent = sc.criticQuote;
+            document.getElementById('reframeCriticEffect').textContent = sc.criticEffect;
+            document.getElementById('reframeTrapAnalysis').textContent = sc.trapAnalysis;
+            document.getElementById('reframeTrapType').textContent = sc.trapType;
+            document.getElementById('reframeHealQuote').textContent = sc.healQuote;
+            document.getElementById('reframeActionStep').textContent = sc.actionStep;
+        }
+
+        function generateCustomReframe() {
+            const inputEl = document.getElementById('customCriticInput');
+            const rawText = inputEl.value.trim();
+            if (!rawText) return;
+
+            if (currentLang === 'ar') {
+                document.getElementById('reframeCriticTitle').textContent = "الفكرة التي يرددها جلادك الداخلي الآن:";
+                document.getElementById('reframeCriticQuote').textContent = `«${rawText}»`;
+                document.getElementById('reframeCriticEffect').textContent = "الأثر: ضغط نفسي وشعور بعدم الكفاية.";
+                document.getElementById('reframeTrapAnalysis').textContent = "هذه الفكرة تنبع من الخوف من الرفض أو الفشل [00:01:54]، وتضعك في فخ «التفكير القطبي» (إما الكمال المطلق أو الحكم على الذات بالقسوة).";
+                document.getElementById('reframeTrapType').textContent = "الفخ المكتشف: الكمالية الدفاعية والتفكير القطبي";
+                document.getElementById('reframeHealQuote').textContent = `«أسمع صوت خوفي في عبارة (${rawText})، لكنني أختار اليوم الرحمة مع نفسي [00:06:51]. قيمتي ثابتة، ويكفيني أن أتقدم خطوة بشرية بسيطة وأتعلم من التجربة دون جلد للذات.»`;
+                document.getElementById('reframeActionStep').textContent = "خطوة عملية: خذ نفسًا عميقًا وابدأ بـ 10% فقط من المهمة.";
+            } else {
+                document.getElementById('reframeCriticTitle').textContent = "Your Custom Inner Critic Thought:";
+                document.getElementById('reframeCriticQuote').textContent = `“${rawText}”`;
+                document.getElementById('reframeCriticEffect').textContent = "Effect: Internal pressure and fear of inadequacy.";
+                document.getElementById('reframeTrapAnalysis').textContent = "This thought is rooted in protective fear [00:01:54] and traps you in Polarized Thinking (demanding 100% perfection or condemning yourself).";
+                document.getElementById('reframeTrapType').textContent = "Detected Trap: Defensive Perfectionism & Polarized Thinking";
+                document.getElementById('reframeHealQuote').textContent = `“I hear the fear underneath (${rawText}), and I choose Self-Compassion today [00:06:51]. My worth is unconditional, and I only need to take one imperfect human step forward.”`;
+                document.getElementById('reframeActionStep').textContent = "Action Step: Take a deep breath and do just 10% of the task.";
+            }
+
+            showToast(i18n[currentLang].toastCustomReframed);
+        }
+
+        function copyCompassionateVoice() {
+            const text = document.getElementById('reframeHealQuote').textContent;
+            const tempInput = document.createElement('textarea');
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            showToast(i18n[currentLang].toastCopied);
+        }
+
+        // ==========================================
+        // 12. SECTION 4: PARALYSIS BREAKER & TIMER
+        // ==========================================
+        function renderPresetTasks() {
+            const container = document.getElementById('presetTasksContainer');
+            container.innerHTML = presetTasks.map((pt, idx) => {
+                const c = pt[currentLang];
+                return `
+                    <button onclick="loadPresetTask(${idx})" class="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-amber-500/20 dark:bg-slate-800 dark:hover:bg-amber-500/20 text-slate-700 dark:text-slate-200 hover:text-amber-600 dark:hover:text-amber-400 font-bold text-xs border border-slate-200 dark:border-slate-700 transition">
+                        + ${c.label}
+                    </button>
+                `;
+            }).join('');
+
+            // Load first preset if inputs are empty
+            if (!document.getElementById('inputTaskName').value) {
+                loadPresetTask(0);
+            }
+        }
+
+        function loadPresetTask(idx) {
+            const c = presetTasks[idx][currentLang];
+            document.getElementById('inputTaskName').value = c.task;
+            document.getElementById('inputPerfectIllusion').value = c.illusion;
+            document.getElementById('inputImperfectStep').value = c.step10;
+        }
+
+        function saveImperfectStepToLog() {
+            const task = document.getElementById('inputTaskName').value.trim();
+            const step10 = document.getElementById('inputImperfectStep').value.trim();
+            if (!task || !step10) return;
+
+            imperfectLog.unshift({
+                task,
+                step10,
+                done: false
+            });
+            renderImperfectLog();
+            resetActionTimer();
+            toggleActionTimer();
+            showToast(i18n[currentLang].toastStepSaved);
+        }
+
+        function toggleLogItem(idx) {
+            if (imperfectLog[idx]) {
+                imperfectLog[idx].done = !imperfectLog[idx].done;
+                renderImperfectLog();
+            }
+        }
+
+        function renderImperfectLog() {
+            const listEl = document.getElementById('imperfectStepsList');
+            const badgeEl = document.getElementById('logCounterBadge');
+            badgeEl.textContent = imperfectLog.length;
+
+            if (imperfectLog.length === 0) {
+                const emptyMsg = currentLang === 'ar'
+                    ? 'لم تضف خطوات بعد. اختر مهمة بالأعلى واضغط اعتماد لكسر الشلل النفسي!'
+                    : 'No imperfect steps logged yet. Select a task above and commit to a 10% step!';
+                listEl.innerHTML = `<li class="text-xs text-slate-400 py-4 text-center">${emptyMsg}</li>`;
+                return;
+            }
+
+            listEl.innerHTML = imperfectLog.map((item, idx) => `
+                <li onclick="toggleLogItem(${idx})" class="p-3 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/80 flex items-start gap-3 cursor-pointer hover:border-emerald-500/40 transition">
+                    <button class="mt-0.5 w-5 h-5 rounded-lg border flex items-center justify-center shrink-0 ${
+                        item.done ? 'bg-emerald-500 border-emerald-500 text-slate-950' : 'border-slate-400'
+                    }">
+                        ${item.done ? '<i class="fa-solid fa-check text-xs"></i>' : ''}
+                    </button>
+                    <div class="text-xs space-y-0.5 ${item.done ? 'line-through opacity-60' : ''}">
+                        <div class="font-extrabold text-slate-900 dark:text-white">${item.task}</div>
+                        <div class="text-emerald-600 dark:text-emerald-400 font-semibold">${item.step10}</div>
+                    </div>
+                </li>
+            `).join('');
+        }
+
+        function formatTime(sec) {
+            const m = String(Math.floor(sec / 60)).padStart(2, '0');
+            const s = String(sec % 60).padStart(2, '0');
+            return `${m}:${s}`;
+        }
+
+        function toggleActionTimer() {
+            const btnIcon = document.getElementById('timerBtnIcon');
+            const btnText = document.getElementById('timerBtnText');
+            const dict = i18n[currentLang];
+
+            if (timerInterval) {
+                clearInterval(timerInterval);
+                timerInterval = null;
+                btnIcon.className = "fa-solid fa-play";
+                btnText.textContent = dict.btnStartTimer;
+            } else {
+                btnIcon.className = "fa-solid fa-pause";
+                btnText.textContent = dict.btnPauseTimer;
+                timerInterval = setInterval(() => {
+                    if (timerSeconds > 0) {
+                        timerSeconds--;
+                        document.getElementById('timerDisplay').textContent = formatTime(timerSeconds);
+                    } else {
+                        clearInterval(timerInterval);
+                        timerInterval = null;
+                        btnIcon.className = "fa-solid fa-check";
+                        document.getElementById('timerEncourageText').textContent = currentLang === 'ar'
+                            ? "أحسنت! لقد كسرت حاجز الشلل النفسي بـ 5 دقائق بشرية صادقة!"
+                            : "Bravo! You broke psychological paralysis with 5 honest human minutes!";
+                    }
+                }, 1000);
+            }
+        }
+
+        function resetActionTimer() {
+            if (timerInterval) {
+                clearInterval(timerInterval);
+                timerInterval = null;
+            }
+            timerSeconds = 300;
+            document.getElementById('timerDisplay').textContent = "05:00";
+            document.getElementById('timerBtnIcon').className = "fa-solid fa-play";
+            document.getElementById('timerBtnText').textContent = i18n[currentLang].btnStartTimer;
+            document.getElementById('timerEncourageText').textContent = i18n[currentLang].timerDefaultMsg;
+        }
+
+        // ==========================================
+        // 13. TOAST NOTIFICATION HELPER
+        // ==========================================
+        let toastTimeout = null;
+        function showToast(msg) {
+            const banner = document.getElementById('toastBanner');
+            const textEl = document.getElementById('toastMessage');
+            textEl.textContent = msg;
+            banner.classList.remove('opacity-0', 'translate-y-4');
+            banner.classList.add('opacity-100', 'translate-y-0');
+
+            if (toastTimeout) clearTimeout(toastTimeout);
+            toastTimeout = setTimeout(() => {
+                banner.classList.remove('opacity-100', 'translate-y-0');
+                banner.classList.add('opacity-0', 'translate-y-4');
+            }, 3000);
+        }
+
+        // ==========================================
+        // 14. INITIALIZE ON WINDOW LOAD
+        // ==========================================
+        window.onload = function () {
+            // Initialize sample log entry
+            imperfectLog = [
+                {
+                    task: currentLang === 'ar' ? "قراءة فصل من كتاب الجلاد تحت جلدي" : "Read 1 chapter of The Executioner Under My Skin",
+                    step10: currentLang === 'ar' ? "قراءة صفحتين فقط دون اشتراط تلخيص الكتاب كاملًا" : "Read just 2 pages without demanding a full summary",
+                    done: true
+                }
+            ];
+            applyLanguage();
+        };
+    </script>
+</body>
+</html>
